@@ -137,7 +137,8 @@ function radarSet(svg, vals) {
   const from = radarPrev || vals.map(() => 0), poly = svg.querySelector(".rv"), dots = svg.querySelectorAll(".rp");
   const paint = cur => { const pts = radarPts(cur); poly.setAttribute("points", pts.map(p => p.map(v => v.toFixed(1)).join(",")).join(" ")); pts.forEach(([x, y], i) => { dots[i].setAttribute("cx", x.toFixed(1)); dots[i].setAttribute("cy", y.toFixed(1)); }); };
   radarPrev = vals.slice();
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return paint(vals);
+  // phones and reduced motion: jump straight to the new shape (a few hundred ms of frames per tap isn't worth it there)
+  if (matchMedia("(prefers-reduced-motion: reduce), (pointer: coarse), (max-width: 899px)").matches) return paint(vals);
   const t0 = performance.now(), D = 380;
   const step = t => { const k = Math.min(1, (t - t0) / D), e = 1 - Math.pow(1 - k, 3); paint(vals.map((v, i) => from[i] + (v - from[i]) * e)); if (k < 1) requestAnimationFrame(step); };
   requestAnimationFrame(step);

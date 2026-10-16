@@ -55,6 +55,8 @@ P.home = r => {
    <div class="grid g3 trend">${live.trends.map(t => `<a class="panel reveal tcard" href="${esc(t.url)}" target="_blank" rel="noopener"><div class="small cinzel">${esc(t.k)}</div><h3>${esc(t.v)}</h3><div>${esc(t.n)}</div></a>`).join("")}</div>
   </section>`;
   countdown($("#count"));
+  const hero = $(".hero", r);
+  if ("IntersectionObserver" in window) new IntersectionObserver(([e]) => hero.classList.toggle("off", !e.isIntersecting)).observe(hero);
 };
 
 P.roster = r => {
@@ -81,7 +83,7 @@ P.roster = r => {
 P.pvepvp = r => {
   const side = {
     pve: { h: "🏰 PvE first", pro: ["Tanking, healing and dungeon nights are what this crew has always done.", "Five people is exactly one dungeon group. Raids open Dec 9.", "Holy Paladin, Prot Paladin and Fury Warrior are top-tier PvE picks.", "Nobody gets ganked on a work night."], con: ["Raid sizes aren't confirmed. Vanilla raids took 20-40, so we'd likely team up with a bigger guild.", "Somebody still has to heal."] },
-    pvp: { h: "⚔️ PvP first", pro: ["Warlock, Priest and Feral Druid all rate A or S in PvP.", "New 15v15 Darkspear Islands BG, plus WSG, AB and AV.", `Pure chaos. Very ${esc(C.CREW_SHORT)}.`], con: ["Chilly on modern PvP: <i>“World of stun craft.”</i>", "The PvP ruleset is one faction per account, and Olympus (30k+) lives on Alliance PvP.", "No arenas announced yet."] }
+    pvp: { h: "⚔️ PvP first", pro: ["Warlock, Priest and Feral Druid all rate A or S in PvP.", "New 15v15 Darkspear Islands BG, plus WSG, AB and AV.", `Pure chaos. Very ${esc(C.CREW_SHORT)}.`], con: ["Cody on modern PvP: <i>“World of stun craft.”</i>", "The PvP ruleset is one faction per account, and Olympus (30k+) lives on Alliance PvP.", "No arenas announced yet."] }
   };
   const rs = [["Normal", "🛡️", "Only if both agree", "Both", "Normal", "Mixed", 1], ["PvP", "⚔️", "Anywhere contested", "One per account", "PvP", "Mixed"], ["Roleplaying", "🎭", "Not stated", "Both", "RP", "Mixed"], ["Hardcore", "💀", "Not stated", "Both", "Hardcore only", "Separate (after launch)"]];
   r.innerHTML = `<section class="wrap"><h2 class="sec">PvE vs PvP</h2><p class="sub">No PvP servers anymore. Each character picks a ruleset for life, and battlegrounds mix every ruleset except Hardcore.</p>
@@ -106,7 +108,7 @@ P.factions = r => {
     Horde: ["🐺", ["Orc (S tier) has Blood Fury, the best PvE racial, now buffing spell power too.", "Undead fear break is the top Horde PvP racial, and Undead Paladins are new.", "Sodapoppin reportedly went Horde to get away from Olympus.", "The Forever Open tournament is Horde-only."]]
   };
   const raceCard = (race, fac) => `<details class="xcard race ${fac === "Alliance" ? "ally" : "horde"}"><summary><b>${race}</b>${tier(G.raceTier[race])}<span class="rcls">${G.races[fac][race].map(k => `<i title="${cls(k).name}" style="color:${cls(k).color}">${cls(k).icon}</i>`).join("")}</span></summary><ul>${G.racials[race].map(x => `<li>${esc(x)}</li>`).join("")}</ul></details>`;
-  r.innerHTML = `<section class="wrap"><h2 class="sec">Alliance vs Horde</h2><p class="sub">The Sep 26 vote went Alliance. Harry: <i>“Damn close poll.”</i></p>
+  r.innerHTML = `<section class="wrap"><h2 class="sec">Alliance vs Horde</h2><p class="sub">The Sep 26 vote went Alliance. Josh: <i>“Damn close poll.”</i></p>
   ${segHTML("fpick", [["both", "⚖️ Compare"], ["Alliance", "🦁 Alliance"], ["Horde", "🐺 Horde"]], "Faction")}
   <div class="facgrid" id="facgrid">${["Alliance", "Horde"].map((f, i) => `${i ? '<div class="vs"><span>VS</span></div>' : ""}<div class="panel ${f === "Alliance" ? "ally" : "horde"} reveal facpanel" data-f="${f}"><span class="facmark" aria-hidden="true">${facs[f][0]}</span><h3>${facs[f][0]} ${f}</h3><ul>${facs[f][1].map(x => `<li>${x}</li>`).join("")}</ul><h4 class="cinzel">Races <small>tap for racials</small></h4><div class="races">${Object.keys(G.races[f]).map(rc => raceCard(rc, f)).join("")}</div></div>`).join("")}</div>
   <div class="panel reveal" style="margin-top:18px"><h3>Balance</h3><p>PvP ruleset: one faction per account, and creation locks can pause the bigger side. Normal, Roleplaying and Hardcore allow both. No official population numbers yet. ${src("Blizzard", "https://news.blizzard.com/en-us/article/24302070/choose-your-ruleset-in-world-of-warcraft-forever")}</p>

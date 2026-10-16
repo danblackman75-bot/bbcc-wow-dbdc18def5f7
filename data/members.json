@@ -1,11 +1,11 @@
 {
- "_readme": "Edit freely. First names only; no BattleTags or personal info. profileUrl: optional link. quotes must match research/research.md. pick: class/spec/race; stated=true only if the member said it.",
+ "_readme": "Edit freely. First names only; no BattleTags or personal info. profileUrl: optional link. pick: class/spec/race; stated=true only if the member said it.",
  "members": [
   {
    "id": "chilly",
-   "name": "Chilly",
+   "name": "Cody",
    "handle": "chilly69",
-   "alias": "Cody",
+   "alias": "",
    "core": true,
    "profileUrl": "",
    "usual": "Usually tanks; unsure this time",
@@ -36,16 +36,16 @@
      "d": "2022-04-20"
     },
     {
-     "t": "@Harry who voted horde so we can shame them?",
+     "t": "@Josh who voted horde so we can shame them?",
      "d": "2026-09-26"
     }
    ]
   },
   {
    "id": "harry",
-   "name": "Harry",
+   "name": "Josh",
    "handle": "kushumaki",
-   "alias": "Josh",
+   "alias": "",
    "core": true,
    "profileUrl": "",
    "usual": "Deciding between Priest and Warrior",
@@ -79,9 +79,9 @@
   },
   {
    "id": "donnie",
-   "name": "Donnie Darko",
+   "name": "Donnie",
    "handle": "donniemuscle",
-   "alias": "Donnie",
+   "alias": "",
    "core": true,
    "profileUrl": "",
    "usual": "Usually healer",
@@ -103,9 +103,9 @@
   },
   {
    "id": "bns",
-   "name": "BNS",
+   "name": "Steve",
    "handle": "bns",
-   "alias": "Steve",
+   "alias": "",
    "core": true,
    "profileUrl": "",
    "usual": "Flexes roles",
@@ -122,17 +122,17 @@
     {
      "t": "You god damn warlock SOB 😘",
      "d": "2023-01-04",
-     "by": "Harry, about bns"
+     "by": "Josh, about Steve"
     },
     {
      "t": "or warlock but steve plays warlock he will be mad",
      "d": "2022-08-16",
-     "by": "Chilly, about bns"
+     "by": "Cody, about Steve"
     },
     {
-     "t": "“Classic players” lol @Chilly @bns @DonnieMuscle Demo and the gang?",
+     "t": "“Classic players” lol @Cody @Steve @Donnie Demo and the gang?",
      "d": "2023-04-12",
-     "by": "Harry"
+     "by": "Josh"
     }
    ]
   },
@@ -230,9 +230,9 @@
   },
   {
    "id": "ro",
-   "name": "Russian Orthodox",
+   "name": "Jake",
    "handle": "Russian Orthodox",
-   "alias": "Jake",
+   "alias": "",
    "core": false,
    "profileUrl": "",
    "usual": "Undecided",
