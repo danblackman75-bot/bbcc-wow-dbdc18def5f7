@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T14:07:03.480Z",
+ "updated": "2026-10-16T15:08:02.413Z",
  "updatedNote": "Auto-refreshed by scripts/refresh-live.mjs",
  "news": [
   {
@@ -268,6 +268,12 @@
    "d": "2026-10-16"
   },
   {
+   "id": "OOMNTYTg_KI",
+   "title": "WoW Forever Devs Answer the BIG PvP Questions",
+   "by": "Xaryu",
+   "d": "2026-10-16"
+  },
+  {
    "id": "qItHuKQOsm8",
    "title": "HOSTING $100k !TOURNY THIS WEEKEND | 7 MORE DAYS OF FOREVER BETA",
    "by": "Xaryu",
@@ -302,15 +308,15 @@
    "title": "The PvP Episode ft. @TipsOutBaby  & @Savixirl | Episode 4 - The WoW: Forever Podcast",
    "by": "World of Warcraft",
    "d": "2026-10-15"
-  },
-  {
-   "id": "CH4sU1raMIU",
-   "title": "Warrior Is WAY More Fun Than Mage in WoW Forever",
-   "by": "Xaryu",
-   "d": "2026-10-15"
   }
  ],
  "autoNews": [
+  {
+   "d": "2026-10-16",
+   "t": "Several Starter Zone White Drops Changed to Greens in Latest WoW: Forever Beta Build",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383461/several-starter-zone-white-drops-changed-to-greens-in-latest-wow-forever-beta"
+  },
   {
    "d": "2026-10-16",
    "t": "Are Vendor Shuffles Dead in WoW: Forever?",
@@ -394,12 +400,6 @@
    "t": "The Secret Finding Discord is Sleuthing Again in WoW: Forever",
    "src": "Wowhead",
    "url": "https://www.wowhead.com/news=383414/the-secret-finding-discord-is-sleuthing-again-in-wow-forever"
-  },
-  {
-   "d": "2026-10-15",
-   "t": "Resistance Gear & The Economy - Friends Per Second Podcast Interview with Blizzard",
-   "src": "Wowhead",
-   "url": "https://www.wowhead.com/news=383386/resistance-gear-and-the-economy-friends-per-second-podcast-interview-with"
   }
  ]
 }
