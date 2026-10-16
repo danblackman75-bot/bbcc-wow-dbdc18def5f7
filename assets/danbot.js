@@ -26,7 +26,7 @@ function danbot(page) {
   const KEY = "bbcc-danbot", st = JSON.parse(localStorage.getItem(KEY) || '{"mute":false,"last":0,"seen":{}}');
   const save = () => localStorage.setItem(KEY, JSON.stringify(st));
   document.body.insertAdjacentHTML("beforeend", `<div id="danbot" class="db"><div class="db-bubble" role="status" hidden><button class="db-x" aria-label="Dismiss">×</button><span class="db-text"></span><div class="db-choices"></div><button class="db-mute">No more tips</button></div>
-   <button class="db-av" aria-label="Danbot: tap for quick links" aria-expanded="false">${DANBOT_SVG}<span class="db-name">Danbot</span></button></div>`);
+   <button class="db-av" aria-label="Wisp: tap for quick links" aria-expanded="false">${DANBOT_SVG}<span class="db-name">Wisp</span></button></div>`);
   const root = $("#danbot"), bub = $(".db-bubble", root), txt = $(".db-text", root), ch = $(".db-choices", root);
   let hideT;
   const show = (text, menu, ms) => { clearTimeout(hideT); txt.textContent = text; ch.innerHTML = menu || ""; bub.hidden = false; $(".db-av", root).setAttribute("aria-expanded", !!menu); if (ms) hideT = setTimeout(() => bub.hidden = true, ms); bindChoices(); };
@@ -41,7 +41,7 @@ function danbot(page) {
   }
   $(".db-av", root).onclick = () => { if (!bub.hidden && ch.querySelector("button[data-i]")) { bub.hidden = true; return; } show("Hey hero. What do you need?", menuHTML()); };
   $(".db-x", root).onclick = () => { bub.hidden = true; st.seen[page] = Date.now(); save(); };
-  $(".db-mute", root).onclick = () => { st.mute = true; bub.hidden = true; save(); toast("Tips off. Tap Danbot any time."); };
+  $(".db-mute", root).onclick = () => { st.mute = true; bub.hidden = true; save(); toast("Tips off. Tap Wisp any time."); };
   const lines = DB_LINES[page] || DB_LINES.home;
   if (!st.mute && Date.now() - st.last > 90e3 && Date.now() - (st.seen[page] || 0) > 6 * 36e5) {
     setTimeout(() => { if (!bub.hidden) return; show(lines[Math.floor(Math.random() * lines.length)], "", 9000); st.last = Date.now(); st.seen[page] = Date.now(); save(); }, 5000);

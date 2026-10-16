@@ -48,7 +48,7 @@ P.home = r => {
    <div class="facts">${facts.map(([i, h, b]) => `<details class="xcard reveal"><summary><span class="xi" aria-hidden="true">${i}</span><b>${h}</b></summary><p>${b}</p></details>`).join("")}</div>
    <p class="small center">${src("Blizzard announcement", "https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever")} · ${src("Rulesets", "https://news.blizzard.com/en-us/article/24302070/choose-your-ruleset-in-world-of-warcraft-forever")}</p>
    <h2 class="sec">The Core Four</h2>
-   <div class="grid g4 corefour">${M.filter(m => m.core).map(m => { const c = cls(m.pick.cls); return `<a href="roster.html#${m.id}" class="panel reveal mini" style="--cc:${c.color}">${avatar(m.pick.cls, m.pick.race, "", { key: m.id, m3d: "wide", cls: "md" })}<h3>${esc(m.name)}</h3><div class="cls" style="color:${c.color}">${esc(m.pick.spec)} ${c.name}</div></a>`; }).join("")}</div>
+   <div class="grid g4 corefour">${M.filter(m => m.core).map(m => { const c = cls(m.pick.cls); return `<a href="roster.html#${m.id}" class="panel reveal mini" style="--cc:${c.color}">${avatar(m.pick.cls, m.pick.race, "", { key: m.id, cls: "md" })}<h3>${esc(m.name)}</h3><div class="cls" style="color:${c.color}">${esc(m.pick.spec)} ${c.name}</div></a>`; }).join("")}</div>
    <h2 class="sec">Road to Launch</h2>
    <div class="timeline">${live.news.slice().reverse().filter(n => n.d >= "2026-10-01").map(n => `<div class="tl reveal ${n.d >= TODAY() ? "fut" : ""}"><b>${fmtD(n.d)}</b><span>${esc(n.t)}</span></div>`).join("")}</div>
    <h2 class="sec">Trending</h2>

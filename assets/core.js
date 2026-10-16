@@ -90,12 +90,8 @@ function toast(t) { let e = $("#toast"); if (!e) { e = document.createElement("d
 function factionOf(race) { return Object.keys(BB.game.races).find(f => BB.game.races[f][race]); }
 function reveal() { const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add("in")), { threshold: .08 }); $$(".reveal").forEach(e => io.observe(e)); }
 
-/* ---------- avatars: 3D model when available, class card otherwise ---------- */
-const AV_SHIELD = `<svg class="ph-shield" viewBox="0 0 64 72" aria-hidden="true"><path d="M32 3 59 12v20c0 18-12 30-27 37C17 62 5 50 5 32V12z" fill="url(#avg)" stroke="var(--cc)" stroke-width="2.5"/><path d="M32 10 52 17v15c0 13-9 22-20 28-11-6-20-15-20-28V17z" fill="none" stroke="var(--cc)" stroke-opacity=".35"/></svg>`;
-function avInner(clsKey, race, name) {
-  const c = cls(clsKey) || { icon: "?", name: "" };
-  return `<div class="ph"><div class="ph-em">${AV_SHIELD}<span class="ph-ico" aria-hidden="true">${c.icon}</span></div>${name ? `<b class="ph-name">${esc(name)}</b>` : ""}<small class="ph-sub">${esc(race)} ${esc(c.name)}</small></div>`;
-}
+/* ---------- avatars: always in-game 3D models (shimmer while loading) ---------- */
+function avInner() { return `<div class="ph" aria-hidden="true"></div>`; }
 function avatar(clsKey, race, name, opt = {}) {
   const c = cls(clsKey) || { color: "#888" };
   return `<div class="av ${opt.cls || ""}" data-cls="${esc(clsKey)}" data-race="${esc(race)}" data-key="${esc(opt.key || "")}"${opt.m3d ? ` data-m3d="${opt.m3d}"` : ""} style="--cc:${c.color}" role="img" aria-label="${esc(name ? name + ": " : "")}${esc(race)} ${esc(c.name || "")}">${avInner(clsKey, race, name)}</div>`;
@@ -105,8 +101,7 @@ function setAvatar(el, clsKey, race, name) {
   const c = cls(clsKey);
   el.dataset.cls = clsKey; el.dataset.race = race; el.style.setProperty("--cc", c.color);
   el.setAttribute("aria-label", `${name ? name + ": " : ""}${race} ${c.name}`);
-  el.querySelector(".ph").outerHTML = avInner(clsKey, race, name);
-  window.M3D && M3D.refresh(el);
+    window.M3D && M3D.refresh(el);
 }
 function bindAvatars(root = document) { window.M3D && M3D.observe(root); }
 function ytCard(v) {

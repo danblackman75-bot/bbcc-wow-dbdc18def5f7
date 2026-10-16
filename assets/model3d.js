@@ -1,6 +1,7 @@
 /* BBCC 3D characters (Wowhead ZamModelViewer via wow-model-viewer, ISC), loaded through BBCC_CONFIG.MODEL_PROXY.
-   Every .av[data-cls] avatar starts as a placeholder card. Visible avatars join a queue and load one at a time;
-   avatars that scroll away are torn down (the card shows again) so only a few WebGL viewers ever run at once. */
+   Every .av[data-cls] avatar is always a 3D model: it shows a loading shimmer until the model is up, and a failed
+   load is retried (never a drawing). Visible avatars load lazily from a queue; avatars far offscreen are torn down
+   so only a few WebGL viewers run at once, and rebuild when scrolled back. */
 window.M3D = (() => {
   const C = window.BBCC_CONFIG || {}, BASE = (C.MODEL_PROXY || "").replace(/\/$/, "");
   const RACE_ID = { "Human": 1, "Orc": 2, "Dwarf": 3, "Night Elf": 4, "Undead": 5, "Tauren": 6, "Gnome": 7, "Troll": 8 };
@@ -8,21 +9,14 @@ window.M3D = (() => {
   const GEAR = {"warrior": [[9, 33982], [5, 33983], [10, 33984], [1, 34215], [7, 33986], [3, 34253], [8, 33989], [6, 33990], [21, 30606], [22, 31852]], "priest": [[6, 34053], [9, 34052], [8, 34055], [1, 34233], [10, 34051], [7, 34049], [3, 34048], [21, 675577], [20, 34047]], "paladin": [[6, 33633], [9, 33634], [5, 33635], [1, 45888], [10, 33636], [7, 33637], [8, 33639], [3, 33680], [21, 675214], [22, 29702]], "druid": [[6, 30541], [8, 30542], [9, 30548], [5, 30536], [1, 178176], [10, 34016], [7, 30540], [3, 30546], [21, 32162]], "warlock": [[6, 34011], [8, 674855], [9, 34012], [10, 34013], [7, 7939], [1, 34369], [3, 34022], [21, 184656], [20, 674853]], "rogue": [[6, 31110], [8, 31111], [9, 31127], [5, 33650], [10, 32815], [1, 33743], [7, 31115], [3, 32813], [21, 33615], [22, 22366]], "mage": [[6, 34046], [9, 34045], [8, 34044], [1, 188836], [3, 34058], [10, 34041], [7, 34039], [5, 34038], [21, 31960]], "hunter": [[6, 33665], [9, 33666], [5, 33667], [10, 33668], [8, 34269], [1, 34367], [7, 33672], [3, 34091], [21, 682296], [26, 733457]], "shaman": [[6, 34078], [9, 34079], [5, 34081], [3, 34067], [10, 34082], [8, 34083], [1, 34217], [7, 34084], [21, 675214], [22, 29702]]};
   const LOOK = { 1: { skin: 2, face: 1, hairStyle: 3, hairColor: 2, facialStyle: 2 }, 3: { skin: 2, face: 1, hairStyle: 3, hairColor: 2, facialStyle: 4 }, 4: { skin: 2, face: 1, hairStyle: 2, hairColor: 3, facialStyle: 1 }, 7: { skin: 1, face: 1, hairStyle: 2, hairColor: 4, facialStyle: 1 } };
   const small = () => matchMedia("(max-width: 760px)").matches;
-  const MAX_LIVE = () => small() ? 2 : 6;
-  const WIDE = 900; // data-m3d="wide" avatars only go 3D at this width and up
-  let libP = null, dead = false, busy = false, ok = null;
+  const MAX_LIVE = () => small() ? 4 : 8;
+  const PAR = () => small() ? 1 : 2; // concurrent loads
+  let libP = null, busy = 0;
+  const dead = false;
   const queue = [], live = new Set();
 
-  function capable() {
-    if (ok !== null) return ok && !dead;
-    ok = false;
-    if (!BASE) return false;
-    const n = navigator; if (n.connection && n.connection.saveData) return false;
-    if (n.deviceMemory && n.deviceMemory < 2) return false;
-    try { ok = !!document.createElement("canvas").getContext("webgl2"); } catch (e) {}
-    return ok;
-  }
-  const supports = el => !!(RACE_ID[el.dataset.race] && GEAR[el.dataset.cls]) && !(el.dataset.m3d === "wide" && innerWidth < WIDE) && el.dataset.m3d !== "off";
+  const capable = () => true;
+  const supports = el => !!(RACE_ID[el.dataset.race] && GEAR[el.dataset.cls]);
   const sig = el => el.dataset.cls + "|" + el.dataset.race + "|" + (el.dataset.gender || 0);
   const script = src => new Promise((res, rej) => { const s = document.createElement("script"); s.src = src; s.onload = res; s.onerror = () => rej(new Error("load " + src)); document.head.append(s); });
   const timeout = (p, ms, what) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error(what + " timeout")), ms))]);
@@ -44,14 +38,14 @@ window.M3D = (() => {
   function teardown(el) {
     const s = el._m3d; if (!s) return; el._m3d = null; live.delete(el);
     try { s.viewer && s.viewer.renderer && s.viewer.renderer.destroy(); } catch (e) {}
-    s.box.remove(); el.classList.remove("live", "loading");
+    s.box.remove(); el.classList.remove("live", "loading", "no3d");
   }
   function sweep() { live.forEach(el => { if (!el.isConnected) teardown(el); }); for (let i = queue.length; i--;) if (!queue[i].isConnected) queue.splice(i, 1); }
 
   function want(el) { if (!queue.includes(el) && !(el._m3d && el._m3d.sig === sig(el))) queue.push(el); pump(); }
 
   async function pump() {
-    if (busy || dead) return;
+    if (busy >= PAR()) return;
     sweep();
     const next = queue.find(el => el._vis);
     if (!next) return;
@@ -61,8 +55,8 @@ window.M3D = (() => {
       teardown(idle);
     }
     queue.splice(queue.indexOf(next), 1);
-    busy = true;
-    try { await load(next); } finally { busy = false; }
+    busy++; pump();
+    try { await load(next); } finally { busy--; }
     pump();
   }
 
@@ -86,12 +80,15 @@ window.M3D = (() => {
       if (el._m3d !== me) return;
       // pull the camera back a touch so helmets and shoulders never clip
       setTimeout(() => { try { if (el._m3d === me) { v.renderer.distance *= 1.45; v.setZenith && v.setZenith(Math.PI / 2 + 0.06); } } catch (e) {} }, 900);
-      el.classList.remove("loading"); el.classList.add("live");
+      el._try = 0; el.classList.remove("loading"); el.classList.add("live");
       if (el._vis === false) setTimeout(() => { if (!el._vis && el._m3d === me && live.size > 1) teardown(el); }, 4000);
     } catch (e) {
       console.warn("3D model unavailable:", e.message);
-      teardown(el); el.classList.add("no3d");
-      if (stage === "lib") { dead = true; libP = null; queue.length = 0; document.querySelectorAll(".av").forEach(a => a.classList.add("no3d")); }
+      teardown(el);
+      if (stage === "lib") libP = null;
+      // retry with backoff; the shimmer stays up meanwhile
+      el._try = (el._try || 0) + 1;
+      clearTimeout(el._retry); el._retry = setTimeout(() => { if (el.isConnected) want(el); }, Math.min(30000, 1500 * 2 ** Math.min(el._try, 5)));
     }
   }
 
@@ -103,14 +100,13 @@ window.M3D = (() => {
       // pause offscreen: tear down after a grace period so quick scroll-bys don't thrash
       clearTimeout(el._off); el._off = setTimeout(() => { if (!el._vis && el._m3d && !el.classList.contains("loading")) teardown(el); }, small() ? 1500 : 6000);
     }
-  }), { rootMargin: "120px 0px" }) : null;
+  }), { rootMargin: "300px 0px" }) : null;
 
   function observe(root = document) {
     sweep();
-    if (!capable() || !io) { root.querySelectorAll(".av").forEach(a => a.classList.add("no3d")); return; }
+    if (!io) { root.querySelectorAll(".av[data-cls]").forEach(el => { el._vis = true; want(el); }); return; }
     root.querySelectorAll(".av[data-cls]").forEach(el => {
-      if (!supports(el)) { el.classList.add("no3d"); return; }
-      el.classList.remove("no3d");
+      if (!supports(el)) return;
       if (!el._obs) { el._obs = 1; io.observe(el); }
     });
   }
@@ -118,8 +114,8 @@ window.M3D = (() => {
   function refresh(el) {
     if (el._m3d && el._m3d.sig === sig(el)) return;
     teardown(el);
-    if (!capable() || !io || !supports(el)) { el.classList.add("no3d"); return; }
-    el.classList.remove("no3d");
+    if (!supports(el)) return;
+    if (!io) { el._vis = true; want(el); return; }
     if (!el._obs) { el._obs = 1; io.observe(el); return; }
     if (el._vis) want(el);
   }

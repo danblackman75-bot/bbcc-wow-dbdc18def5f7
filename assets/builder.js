@@ -199,7 +199,7 @@ function renderBuilder(root) {
 }
 function slotHTML(id) {
   const m = BB.M[id], p = S.picks[id];
-  return `<button class="slot-pick" aria-pressed="false">${avatar(p.cls, p.race, "", { key: id, m3d: "wide", cls: "sm" })}<span class="slot-txt"><b>${esc(m.name)}</b><small></small></span><span class="slot-role" aria-hidden="true"></span></button><button class="slot-x" aria-label="Bench ${esc(m.name)}">×</button>`;
+  return `<button class="slot-pick" aria-pressed="false">${avatar(p.cls, p.race, "", { key: id, cls: "sm" })}<span class="slot-txt"><b>${esc(m.name)}</b><small></small></span><span class="slot-role" aria-hidden="true"></span></button><button class="slot-x" aria-label="Bench ${esc(m.name)}">×</button>`;
 }
 function draw() {
   Object.values(S.picks).forEach(fixPick);
