@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T12:50:16.853Z",
+ "updated": "2026-10-16T13:07:02.781Z",
  "updatedNote": "Auto-refreshed by scripts/refresh-live.mjs",
  "news": [
   {
@@ -316,6 +316,12 @@
  "autoNews": [
   {
    "d": "2026-10-16",
+   "t": "Are Vendor Shuffles Dead in WoW: Forever?",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383458/are-vendor-shuffles-dead-in-wow-forever"
+  },
+  {
+   "d": "2026-10-16",
    "t": "Official Dueling Arena Added for $100k PvP Tournament in WoW: Forever",
    "src": "Wowhead",
    "url": "https://www.wowhead.com/news=383438/official-dueling-arena-added-for-100k-pvp-tournament-in-wow-forever"
@@ -397,12 +403,6 @@
    "t": "Resistance Gear & The Economy - Friends Per Second Podcast Interview with Blizzard",
    "src": "Wowhead",
    "url": "https://www.wowhead.com/news=383386/resistance-gear-and-the-economy-friends-per-second-podcast-interview-with"
-  },
-  {
-   "d": "2026-10-14",
-   "t": "World of Warcraft: Forever Highilghts Launch Dungeons in New Blizzard Video",
-   "src": "Wowhead",
-   "url": "https://www.wowhead.com/news=383419/world-of-warcraft-forever-highilghts-launch-dungeons-in-new-blizzard-video"
   }
  ]
 }
