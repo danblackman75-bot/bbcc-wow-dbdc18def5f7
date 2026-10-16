@@ -9,7 +9,7 @@ window.M3D = (() => {
   const GEAR = {"warrior": [[9, 33982], [5, 33983], [10, 33984], [1, 34215], [7, 33986], [3, 34253], [8, 33989], [6, 33990], [21, 30606], [22, 31852]], "priest": [[6, 34053], [9, 34052], [8, 34055], [1, 34233], [10, 34051], [7, 34049], [3, 34048], [21, 675577], [20, 34047]], "paladin": [[6, 33633], [9, 33634], [5, 33635], [1, 45888], [10, 33636], [7, 33637], [8, 33639], [3, 33680], [21, 675214], [22, 29702]], "druid": [[6, 30541], [8, 30542], [9, 30548], [5, 30536], [1, 178176], [10, 34016], [7, 30540], [3, 30546], [21, 32162]], "warlock": [[6, 34011], [8, 674855], [9, 34012], [10, 34013], [7, 7939], [1, 34369], [3, 34022], [21, 184656], [20, 674853]], "rogue": [[6, 31110], [8, 31111], [9, 31127], [5, 33650], [10, 32815], [1, 33743], [7, 31115], [3, 32813], [21, 33615], [22, 22366]], "mage": [[6, 34046], [9, 34045], [8, 34044], [1, 188836], [3, 34058], [10, 34041], [7, 34039], [5, 34038], [21, 31960]], "hunter": [[6, 33665], [9, 33666], [5, 33667], [10, 33668], [8, 34269], [1, 34367], [7, 33672], [3, 34091], [21, 682296], [26, 733457]], "shaman": [[6, 34078], [9, 34079], [5, 34081], [3, 34067], [10, 34082], [8, 34083], [1, 34217], [7, 34084], [21, 675214], [22, 29702]]};
   const LOOK = { 1: { skin: 2, face: 1, hairStyle: 3, hairColor: 2, facialStyle: 2 }, 3: { skin: 2, face: 1, hairStyle: 3, hairColor: 2, facialStyle: 4 }, 4: { skin: 2, face: 1, hairStyle: 2, hairColor: 3, facialStyle: 1 }, 7: { skin: 1, face: 1, hairStyle: 2, hairColor: 4, facialStyle: 1 } };
   const small = () => matchMedia("(max-width: 760px)").matches;
-  const MAX_LIVE = () => small() ? 4 : 8;
+  const MAX_LIVE = () => small() ? 6 : 10;
   const PAR = () => small() ? 1 : 2; // concurrent loads
   let libP = null, busy = 0;
   const dead = false;
@@ -62,9 +62,9 @@ window.M3D = (() => {
 
   async function load(el) {
     teardown(el);
-    const want = sig(el), box = document.createElement("div"), id = "m3d" + Math.random().toString(36).slice(2, 8);
+    const mySig = sig(el), box = document.createElement("div"), id = "m3d" + Math.random().toString(36).slice(2, 8);
     box.className = "m3d"; box.id = id; el.append(box); el.classList.add("loading");
-    const me = el._m3d = { box, viewer: null, sig: want }; live.add(el);
+    const me = el._m3d = { box, viewer: null, sig: mySig }; live.add(el);
     let stage = "lib";
     try {
       const { generateModels } = await timeout(lib(), 20000, "viewer");
