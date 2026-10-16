@@ -12,9 +12,16 @@ window.M3D = (() => {
   // camera framing per race: [distance multiplier, vertical aim offset as a fraction of distance]
   const FRAME = { 1: [1.05, 0], 2: [1.05, 0], 3: [1.05, 0], 4: [1.05, 0], 5: [1.05, 0], 6: [1.05, 0], 7: [1.05, 0], 8: [1.05, 0] };
   const FRAME_K = (window.BBCC_FRAME_K || 1);
+  // phones: render each model once, freeze it into a still of its own 3D render, then free the WebGL context.
+  // Only the War Room editor's selected character stays live (while visible).
+  const PHONE = matchMedia("(pointer: coarse), (max-width: 899px)").matches;
+  const STILLS = new Map(); // sig|WxH -> still data URL, reused when a card re-renders
+  const skey = el => sig(el) + "|" + el.clientWidth + "x" + el.clientHeight;
+  const keepLive = el => !PHONE || !!el.closest(".ed-av");
+  function putStill(el, url) { let img = el.querySelector(".m3d-still"); if (!img) { img = document.createElement("img"); img.className = "m3d-still"; img.alt = ""; img.decoding = "async"; el.append(img); } if (img.src !== url) img.src = url; el.classList.add("still"); }
   const small = () => matchMedia("(max-width: 760px)").matches;
-  const MAX_LIVE = () => small() ? 8 : 14; // stay under browser WebGL context limits
-  const PAR = () => small() ? 1 : 2; // concurrent loads
+  const MAX_LIVE = () => PHONE ? 2 : small() ? 8 : 14; // stay under browser WebGL context limits
+  const PAR = () => PHONE || small() ? 1 : 2; // concurrent loads
   let libP = null, busy = 0;
   const dead = false;
   const queue = [], live = new Set();
@@ -42,13 +49,17 @@ window.M3D = (() => {
   function teardown(el) {
     const s = el._m3d; if (!s) return; el._m3d = null; live.delete(el);
     // leave a still of this model's own 3D render in place, so a released viewer never blanks or re-shimmers
-    if (s.still) { let img = el.querySelector(".m3d-still"); if (!img) { img = document.createElement("img"); img.className = "m3d-still"; img.alt = ""; img.decoding = "async"; el.append(img); } img.src = s.still; }
+    if (s.still) putStill(el, s.still);
+    let gl = null; try { const c = s.box.querySelector("canvas"); gl = c && (c.getContext("webgl2") || c.getContext("webgl")); } catch (e) {}
     try { s.viewer && s.viewer.renderer && s.viewer.renderer.destroy(); } catch (e) {}
+    try { gl && gl.getExtension("WEBGL_lose_context") && gl.getExtension("WEBGL_lose_context").loseContext(); } catch (e) {}
     s.box.remove(); el.classList.remove("live", "loading", "no3d"); if (el.querySelector(".m3d-still")) el.classList.add("still");
   }
   function sweep() { live.forEach(el => { if (!el.isConnected) teardown(el); }); for (let i = queue.length; i--;) if (!queue[i].isConnected) queue.splice(i, 1); }
 
-  function want(el) { if (!queue.includes(el) && !(el._m3d && el._m3d.sig === sig(el))) queue.push(el); pump(); }
+  function want(el) {
+    if (PHONE && !keepLive(el) && !el._m3d) { const u = STILLS.get(skey(el)); if (u) { putStill(el, u); return; } }
+    if (!queue.includes(el) && !(el._m3d && el._m3d.sig === sig(el))) queue.push(el); pump(); }
 
   async function pump() {
     if (busy >= PAR()) return;
@@ -83,7 +94,8 @@ window.M3D = (() => {
       const asp = el.clientWidth && el.clientHeight ? el.clientWidth / el.clientHeight : 0.75;
       const v = await timeout(generateModels(asp, "#" + id, ch), 20000, "model");
       if (el._m3d !== me) { try { v.renderer.destroy(); } catch (e) {} return; }
-      me.viewer = v;
+      me.viewer = v; me.skey = skey(el);
+      if (PHONE) try { v.setAnimPaused(true); } catch (e) {} // no idle animation on phones
       // render only while on screen; when it scrolls away draw one last frame, keep a still of it, then freeze
       const Rr = v.renderer, draw = Rr.draw;
       const fr = FRAME[r] || [1, 0];
@@ -94,14 +106,22 @@ window.M3D = (() => {
         draw.call(this, t);
         // the viewer re-fits its camera whenever bounds change; re-apply our framing in the same frame so it never jumps
         if (refit && !Rr.doUpdateBounds) { try { Rr.distance *= fr[0] * FRAME_K * (window.BBCC_FRAME_X || 1); Rr.zenith = Math.PI / 2; if (fr[1]) Rr.target[2] += fr[1] * Rr.distance; Rr.updateCamera(); } catch (e) {} me.fit = Date.now(); }
-        if (me.snap) { me.snap = false; try { const c = Rr.canvas && (Rr.canvas[0] || Rr.canvas); const u = c.toDataURL("image/webp", 0.82); if (u.length > 3000) me.still = u; } catch (e) {} }
+        if (me.snap) { me.snap = false; try { const c = Rr.canvas && (Rr.canvas[0] || Rr.canvas); const u = c.toDataURL("image/webp", 0.85); if (u.length > 3000) { me.still = u; STILLS.set(me.skey, u); } } catch (e) {} me.snapped = true; }
       };
       const cv = box.querySelector("canvas");
       cv && cv.addEventListener("webglcontextlost", ev => { ev.preventDefault(); if (el._m3d !== me) return; console.warn("3D context lost; rebuilding"); teardown(el); setTimeout(() => el.isConnected && want(el), 1000); });
       const t0 = Date.now();
       await new Promise((res, rej) => { const t = setInterval(() => { const R = v.renderer; if (el._m3d !== me) { clearInterval(t); res(); } else if (R && R.actors && R.actors[0] && R.distance && me.fit && Date.now() - me.fit > 700) { clearInterval(t); res(); } else if (Date.now() - t0 > 25000) { clearInterval(t); rej(new Error("model timeout")); } }, 150); });
       if (el._m3d !== me) return;
-      el._try = 0; el.classList.remove("loading", "still"); el.classList.add("live");
+      el._try = 0;
+      if (!keepLive(el)) {
+        // phone: take the still, then destroy the viewer and its WebGL context
+        me.snapped = false; me.snap = true; me.paused = false;
+        const t1 = Date.now(); while (!me.snapped && el._m3d === me && Date.now() - t1 < 3000) await new Promise(r => setTimeout(r, 50));
+        if (el._m3d === me) { if (me.still) teardown(el); else { el.classList.remove("loading"); el.classList.add("live"); } }
+        return;
+      }
+      el.classList.remove("loading", "still"); el.classList.add("live");
       if (el._vis === false) { me.snap = true; me.paused = true; }
     } catch (e) {
       console.warn("3D model unavailable:", e.message);
@@ -115,7 +135,9 @@ window.M3D = (() => {
 
   const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => {
     const el = e.target; el._vis = e.isIntersecting;
-    const m = el._m3d; if (m) { if (!e.isIntersecting && !m.paused && m.viewer) m.snap = true; m.paused = !e.isIntersecting; } // freeze offscreen
+    const m = el._m3d; if (m) { if (!e.isIntersecting && !m.paused && m.viewer) m.snap = true; m.paused = !e.isIntersecting;
+      // phone editor: once frozen offscreen, free its context too (the still stays)
+      if (PHONE && !e.isIntersecting && m.viewer && el.classList.contains("live")) setTimeout(() => { if (el._m3d === m && !el._vis) teardown(el); }, 400); }
     if (e.isIntersecting) want(el);
     else { const i = queue.indexOf(el); if (i > -1) queue.splice(i, 1); }
   }), { rootMargin: "300px 0px" }) : null;
@@ -138,5 +160,5 @@ window.M3D = (() => {
     if (!el._obs) { el._obs = 1; io.observe(el); return; }
     if (el._vis) want(el);
   }
-  return { observe, refresh, capable, _state: () => ({ live: live.size, queue: queue.length, dead, busy }) };
+  return { observe, refresh, capable, _state: () => ({ phone: PHONE, stills: STILLS.size, live: live.size, queue: queue.length, dead, busy }) };
 })();
