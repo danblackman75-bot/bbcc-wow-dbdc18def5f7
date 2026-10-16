@@ -651,23 +651,3 @@ button:active,.btn:active,.bottomnav a:active{opacity:.85}
 /* war room phones: keep Wisp clear of the score bar */
 @media(max-width:1060px){body[data-page=warroom] .db{bottom:calc(150px + env(safe-area-inset-bottom))}}
 .small a,main p a{padding-block:.35em}
-
-/* ===== phones: lightweight rendering (no blur, no big shadows, no looping animation) ===== */
-@media (pointer:coarse),(max-width:899px){
- *,*:before,*:after{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
- *,*:before,*:after{animation-iteration-count:1!important;animation-duration:0s!important;animation-delay:0s!important;transition-duration:0s!important}
- .reveal{opacity:1!important;transform:none!important}
- header.top,.bottomnav,.minigrade,.db,.sheetbg{box-shadow:none!important;filter:none!important;transform:translateZ(0)}
- .bottomnav{background:#0d0a07!important}
- .minigrade{background:#1c150e!important}
- .bottomnav .hub span{box-shadow:0 0 0 2px var(--gold2)!important;filter:none!important;transition:none!important}
- .db-av{filter:none!important}
- .db-svg *{animation:none!important}
- .mini,.panel,.av,.btn{box-shadow:none!important}
- .mini{transition:none!important}
- .cd b{animation:none!important}
- .av .m3d-still{transform:translateZ(0)}
- /* the loading shimmer is a soft static tint on phones */
- .ph:before{animation:none!important;background:color-mix(in srgb,var(--cc) 8%,transparent)}
-}
-@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
