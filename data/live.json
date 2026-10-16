@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T16:07:03.201Z",
+ "updated": "2026-10-16T17:07:03.159Z",
  "updatedNote": "Auto-refreshed by scripts/refresh-live.mjs",
  "news": [
   {
@@ -313,6 +313,12 @@
  "autoNews": [
   {
    "d": "2026-10-16",
+   "t": "Midnight 12.1.5 Live, Patch 12.1.7 & WoW: Forever - WoW Weekly Recap",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383465/midnight-12-1-5-live-patch-12-1-7-and-wow-forever-wow-weekly-recap"
+  },
+  {
+   "d": "2026-10-16",
    "t": "Several Starter Zone White Drops Changed to Greens in Latest WoW: Forever Beta Build",
    "src": "Wowhead",
    "url": "https://www.wowhead.com/news=383461/several-starter-zone-white-drops-changed-to-greens-in-latest-wow-forever-beta"
@@ -394,12 +400,6 @@
    "t": "The WoW: Forever Podcast Episode 4 Now Available - PvP Discussion",
    "src": "Wowhead",
    "url": "https://www.wowhead.com/news=383429/the-wow-forever-podcast-episode-3-now-available-pvp-discussion"
-  },
-  {
-   "d": "2026-10-15",
-   "t": "The Secret Finding Discord is Sleuthing Again in WoW: Forever",
-   "src": "Wowhead",
-   "url": "https://www.wowhead.com/news=383414/the-secret-finding-discord-is-sleuthing-again-in-wow-forever"
   }
  ]
 }
