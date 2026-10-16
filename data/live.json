@@ -1,0 +1,408 @@
+{
+ "updated": "2026-10-16T12:50:16.853Z",
+ "updatedNote": "Auto-refreshed by scripts/refresh-live.mjs",
+ "news": [
+  {
+   "d": "2026-12-09",
+   "t": "Raids open (first raid tier)",
+   "src": "wowforevertierlist.com",
+   "url": "https://wowforevertierlist.com/races/best-race-for-each-class",
+   "future": true
+  },
+  {
+   "d": "2026-11-04",
+   "t": "WoW: Forever launches globally, 3:00 PM PT / 6:00 PM ET. Included with a WoW subscription",
+   "src": "Blizzard News",
+   "url": "https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever",
+   "future": true
+  },
+  {
+   "d": "2026-10-27",
+   "t": "Name reservation window opens (through Nov 3)",
+   "src": "timesaver.gg",
+   "url": "https://timesaver.gg/blog/wow-forever-best-pvp-class-tier-list",
+   "future": true
+  },
+  {
+   "d": "2026-10-17",
+   "t": "The Forever Open: Level-30 Horde dueling tournament on the PvP ruleset, hosted by Esfand & Xaryu (Oct 17–18)",
+   "src": "Esfand on X",
+   "url": "https://x.com/EsfandTV/status/2104314023978160220",
+   "future": true
+  },
+  {
+   "d": "2026-10-13",
+   "t": "Esfand floats running a streamer guild/raid on Alliance PvP",
+   "src": "X",
+   "url": "https://x.com/EsfandTV/status/2109908763104985397"
+  },
+  {
+   "d": "2026-10-12",
+   "t": "PvP tier list update: Ret Paladin S, \"Blizzard's golden boy\"",
+   "src": "wowforevertierlist.com",
+   "url": "https://wowforevertierlist.com/tier-list/pvp"
+  },
+  {
+   "d": "2026-10-08",
+   "t": "Beta Rage fixes; raid sims (Fury #1 on Oct 6) expected to move",
+   "src": "mmonster",
+   "url": "https://mmonster.co/wow-forever/guides/tier-lists"
+  },
+  {
+   "d": "2026-10-01",
+   "t": "Class rework lands in beta; Cannibalize can no longer be used during Divine Shield",
+   "src": "wowforevertierlist.com",
+   "url": "https://wowforevertierlist.com/tier-list/races"
+  },
+  {
+   "d": "2026-09-27",
+   "t": "The Forever Open dueling tournament announced",
+   "src": "Esfand on X",
+   "url": "https://x.com/EsfandTV/status/2104314023978160220"
+  },
+  {
+   "d": "2026-09-23",
+   "t": "Blizzard: 'Create the Hero You Want to Be': full race/class table and reworked racials",
+   "src": "Wowhead Blue Tracker",
+   "url": "https://www.wowhead.com/forever/blue-tracker/news/us/create-the-hero-you-want-to-be-in-world-of-warcraft-forever-world-of-warcraft-24304075"
+  },
+  {
+   "d": "2026-09-23",
+   "t": "Asmongold's Olympus guild network passes 30,000 members (Alliance, PvP ruleset)",
+   "src": "Asmongold on X",
+   "url": "https://x.com/Asmongold/status/2102595317803721048"
+  },
+  {
+   "d": "2026-09-21",
+   "t": "Blizzard: Choose Your Ruleset: Normal, PvP, Roleplaying; Hardcore later",
+   "src": "Blizzard News",
+   "url": "https://news.blizzard.com/en-us/article/24302070/choose-your-ruleset-in-world-of-warcraft-forever"
+  },
+  {
+   "d": "2026-09-17",
+   "t": "Beta opens; Q&A confirms realmless ≠ regionless",
+   "src": "Half-Baked Warcraft",
+   "url": "https://halfbakedwarcraft.com/news/forever-deep-dive-realmless-camping-legacy/"
+  },
+  {
+   "d": "2026-09-13",
+   "t": "BlizzCon Deep Dive: no more realms, Skyborne race, Camping & Legacy systems",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866"
+  },
+  {
+   "d": "2026-09-12",
+   "t": "WoW: Forever announced at BlizzCon 2026",
+   "src": "Blizzard News",
+   "url": "https://news.blizzard.com/en-us/article/24301145/world-of-warcraft-at-blizzcon-2026-news-round-up"
+  }
+ ],
+ "videos": [
+  {
+   "id": "nQPS_QSOYCU",
+   "title": "World of Warcraft: Forever - Deep Dive | BlizzCon 2026",
+   "by": "World of Warcraft"
+  },
+  {
+   "id": "LwOWAf06YPg",
+   "title": "Dive into Dungeons with Devs ft. @hammerdancegaming | Episode 3 - The WoW: Forever Podcast",
+   "by": "World of Warcraft"
+  },
+  {
+   "id": "GVcXFuegk9s",
+   "title": "My First Level 30 Duels in WoW Forever Beta",
+   "by": "Xaryu",
+   "d": "2026-10-07"
+  },
+  {
+   "id": "YE_wmmplDf0",
+   "title": "Testing the NEW Shaman in WoW Forever Beta... Worth Playing? | Pikaboo",
+   "by": "Pikaboo",
+   "d": "2026-09-21"
+  },
+  {
+   "id": "WWgytt6khbo",
+   "title": "Blizzard can’t stop us anymore..",
+   "by": "Asmongold TV"
+  },
+  {
+   "id": "f7jdpwkJXog",
+   "title": "Preach Thinks Shadowlands HURT WoW Forever",
+   "by": "The Daily Preach"
+  }
+ ],
+ "streamers": [
+  {
+   "who": "Esfand",
+   "h": "@EsfandTV",
+   "d": "2026-09-18",
+   "q": "I feel like after 1 day of Classic Plus finally being here, Blizzard may have cooked big time on WoW Forever. The starting experience for me just playing the one character so far is at least a 9/10.",
+   "url": "https://x.com/EsfandTV/status/2101008565842424244",
+   "tag": "Hype"
+  },
+  {
+   "who": "Esfand",
+   "h": "@EsfandTV",
+   "d": "2026-10-13",
+   "q": "So hypothetically… how much interest would there be if I decided to run a Streamer guild/raid on Alliance PvP server in WoW: Forever?",
+   "url": "https://x.com/EsfandTV/status/2109908763104985397",
+   "tag": "Realm / Faction"
+  },
+  {
+   "who": "Esfand",
+   "h": "@EsfandTV",
+   "d": "2026-10-11",
+   "q": "They changed the word \"resist\" for spells to \"miss\" like melee attacks in WoW: Forever for some reason, this just means it got resisted lol",
+   "url": "https://x.com/EsfandTV/status/2109360111990763694",
+   "tag": "Mechanics"
+  },
+  {
+   "who": "Esfand & Xaryu",
+   "h": "The Forever Open",
+   "d": "2026-09-27",
+   "q": "📅Dates: Oct 17/18 📜Ruleset: PVP 🔴Faction: Horde ➕Level: 30 💰Prize Pool: $50,000",
+   "url": "https://x.com/EsfandTV/status/2104314023978160220",
+   "tag": "PvP"
+  },
+  {
+   "who": "Maximum",
+   "h": "@maximum",
+   "d": "2026-09-17",
+   "q": "was thinking about playing classic forever but as a lot of you know i'm pretty strictly no changes and after some of my own research there is a fair amount of stuff different.",
+   "url": "https://x.com/maximum/status/2100628249651097869",
+   "tag": "PvE / Purist"
+  },
+  {
+   "who": "Preach",
+   "h": "@PreachGaming",
+   "d": "2026-09-12",
+   "q": "I’m playing wow forever right now, AMA",
+   "url": "https://x.com/PreachGaming/status/2098903303501562286",
+   "tag": "Hype"
+  },
+  {
+   "who": "Asmongold",
+   "h": "@Asmongold",
+   "d": "2026-09-23",
+   "q": "Olympus now has 30+ full guilds with over 30,000 members",
+   "url": "https://x.com/Asmongold/status/2102595317803721048",
+   "tag": "Streamer guild"
+  }
+ ],
+ "asmon": {
+  "facts": [
+   {
+    "t": "Olympus is a network of dozens of guilds sharing one name and tabard, built on the ALLIANCE side of the PvP ruleset during the beta.",
+    "src": "olympuswow.com guide",
+    "url": "https://olympuswow.com/blog/asmongold-olympus-wow.html"
+   },
+   {
+    "t": "Size: 30,000+ (his own count, Sep 23), 40,000+ per the Olympus addon census by week two.",
+    "src": "Asmongold on X / olympuswow.com",
+    "url": "https://x.com/Asmongold/status/2102595317803721048"
+   },
+   {
+    "t": "Game Rant (Sep 25) called Olympus Alliance-based and reported Sodapoppin plays Horde to avoid Olympus chat.",
+    "src": "WoW Forever Outpost recap",
+    "url": "https://wofwforever.com/en/guides/wow-forever-olympus-guild/"
+   },
+   {
+    "t": "PARAPHRASE (translated from Polish coverage): on stream he described a plan for Olympus to monopolize rare crafting recipes so outsiders must join for free crafting ('treat it like a tariff').",
+    "src": "GRYOnline.pl, Oct 5",
+    "url": "https://www.gry-online.pl/newsroom/potraktujcie-to-jak-clo-asmongold-otwarcie-planuje-psucie-ekonomi/za31e01"
+   },
+   {
+    "t": "Says he has a secret 'master plan' if Blizzard disbands Olympus (early Oct stream).",
+    "src": "Sportskeeda, Oct 2",
+    "url": "https://www.sportskeeda.com/us/streamers/news-asmongold-claims-big-plan-will-involve-everyone-case-controversial-guild-world-warcraft-forever-gets-disbanded"
+   }
+  ],
+  "verdict": "Alliance + PvP ruleset. If the BBCC wants quiet Alliance PvP questing, expect a sea of Olympus tabards. Horde PvP or the Normal ruleset avoids the zerg."
+ },
+ "trends": [
+  {
+   "k": "Most-hyped class",
+   "v": "Paladin",
+   "n": "Top tier on 3 of 4 overall lists; Ret is the PvP 'golden boy'",
+   "url": "https://endgametools.com/en/wow-forever/news/wow-forever-tier-list"
+  },
+  {
+   "k": "Most consistent",
+   "v": "Mage",
+   "n": "S or A on every list; fastest leveler with Hunter",
+   "url": "https://endgametools.com/en/wow-forever/news/wow-forever-tier-list"
+  },
+  {
+   "k": "Raid DPS #1",
+   "v": "Fury Warrior",
+   "n": "Tops the Oct 6 raid sim, ahead of Survival Hunter",
+   "url": "https://mmonster.co/wow-forever/guides/tier-lists"
+  },
+  {
+   "k": "Top races",
+   "v": "Orc & Human",
+   "n": "Blood Fury (PvE) and Will to Survive (PvP)",
+   "url": "https://wowforevertierlist.com/tier-list/races"
+  },
+  {
+   "k": "Faction chatter",
+   "v": "Alliance-heavy PvP",
+   "n": "Redditors guess slightly more Alliance on PvP, more Horde on Normal; Olympus is Alliance",
+   "url": "https://www.reddit.com/r/classicwow/comments/1wp62xr/wow_forever_pvp_servers_for_horde/"
+  },
+  {
+   "k": "Streamer guilds",
+   "v": "Olympus (Alliance PvP)",
+   "n": "30k–40k members; Sodapoppin reportedly went Horde to dodge it",
+   "url": "https://wofwforever.com/en/guides/wow-forever-olympus-guild/"
+  }
+ ],
+ "autoVideos": [
+  {
+   "id": "4geTAbT9EOE",
+   "title": "Blizzard Just Revealed Their REAL Vision For WoW Forever PvP",
+   "by": "Esfand",
+   "d": "2026-10-16"
+  },
+  {
+   "id": "qItHuKQOsm8",
+   "title": "HOSTING $100k !TOURNY THIS WEEKEND | 7 MORE DAYS OF FOREVER BETA",
+   "by": "Xaryu",
+   "d": "2026-10-16"
+  },
+  {
+   "id": "wCRzKCpyiWI",
+   "title": "Every Class Just Got Massive Changes In The WoW Forever Beta (BUFFS & NERFS)",
+   "by": "Venruki",
+   "d": "2026-10-16"
+  },
+  {
+   "id": "_aBTFR0KoVE",
+   "title": "The Gold Situation Has a BIG Issue...🥲 | WoW Forever",
+   "by": "Esfand",
+   "d": "2026-10-15"
+  },
+  {
+   "id": "4qxarnZlo-0",
+   "title": "WOW FOREVER BETA! | UPDATE TODAY?? | $100,000 TOURNEY THIS WEEKEND",
+   "by": "Venruki",
+   "d": "2026-10-15"
+  },
+  {
+   "id": "bzaMA5fZ1tE",
+   "title": "The PvP Episode ft. @TipsOutBaby  & @Savixirl | Episode 4 - The WoW: Forever Podcast",
+   "by": "World of Warcraft",
+   "d": "2026-10-15"
+  },
+  {
+   "id": "CH4sU1raMIU",
+   "title": "Warrior Is WAY More Fun Than Mage in WoW Forever",
+   "by": "Xaryu",
+   "d": "2026-10-15"
+  },
+  {
+   "id": "EcdDtCgT_5k",
+   "title": "My Thoughts On The Final Rules For The WoW Forever Beta Duel Tournament",
+   "by": "Venruki",
+   "d": "2026-10-15"
+  },
+  {
+   "id": "fNIdcJMosWY",
+   "title": "WOW FOREVER BETA! | UPDATE TODAY? | $100,000 TOURNEY THIS WEEKEND",
+   "by": "Venruki",
+   "d": "2026-10-15"
+  }
+ ],
+ "autoNews": [
+  {
+   "d": "2026-10-16",
+   "t": "Official Dueling Arena Added for $100k PvP Tournament in WoW: Forever",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383438/official-dueling-arena-added-for-100k-pvp-tournament-in-wow-forever"
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Some Powerful Hunter Pet Abilities Nerfed in WoW: Forever",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383460/some-powerful-hunter-pet-abilities-nerfed-in-wow-forever"
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Class Racials in WoW: Forever Receive Tuning Adjustments in Latest Build",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383457/class-racials-in-wow-forever-receive-tuning-adjustments-in-latest-build"
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Many Buffs Now Raid-Wide: Class Changes in Latest WoW: Forever Build",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383456/many-buffs-now-raid-wide-class-changes-in-latest-wow-forever-build"
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Massive Racial Updates - WoW: Forever Beta Development Notes",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383454/massive-racial-updates-wow-forever-beta-development-notes"
+  },
+  {
+   "d": "2026-10-15",
+   "t": "No Lower Level PvP Protection Planned for WoW: Forever",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383435/no-lower-level-pvp-protection-planned-for-wow-forever"
+  },
+  {
+   "d": "2026-10-15",
+   "t": "Join the World of Warcraft: Forever Stress Test on October 19th",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383449/join-the-world-of-warcraft-forever-stress-test-on-october-19th"
+  },
+  {
+   "d": "2026-10-15",
+   "t": "WoW: Forever Beta Going Down for Maintenance for New Build",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383446/wow-forever-beta-going-down-for-maintenance-for-new-build"
+  },
+  {
+   "d": "2026-10-15",
+   "t": "Paladin Class Deep Dive in WoW: Forever",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383440/paladin-class-deep-dive-in-wow-forever"
+  },
+  {
+   "d": "2026-10-15",
+   "t": "Blizzard to Lower Alterac Valley Honor and Increase All Other Battlegrounds Honor in WoW: Forever",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383433/blizzard-to-lower-alterac-valley-honor-and-increase-all-other-battlegrounds"
+  },
+  {
+   "d": "2026-10-15",
+   "t": "Blizzard Confirms No Current Plans for RP-PVP Ruleset in WoW: Forever",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383431/blizzard-confirms-no-current-plans-for-rp-pvp-ruleset-in-wow-forever"
+  },
+  {
+   "d": "2026-10-15",
+   "t": "The WoW: Forever Podcast Episode 4 Now Available - PvP Discussion",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383429/the-wow-forever-podcast-episode-3-now-available-pvp-discussion"
+  },
+  {
+   "d": "2026-10-15",
+   "t": "The Secret Finding Discord is Sleuthing Again in WoW: Forever",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383414/the-secret-finding-discord-is-sleuthing-again-in-wow-forever"
+  },
+  {
+   "d": "2026-10-15",
+   "t": "Resistance Gear & The Economy - Friends Per Second Podcast Interview with Blizzard",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383386/resistance-gear-and-the-economy-friends-per-second-podcast-interview-with"
+  },
+  {
+   "d": "2026-10-14",
+   "t": "World of Warcraft: Forever Highilghts Launch Dungeons in New Blizzard Video",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383419/world-of-warcraft-forever-highilghts-launch-dungeons-in-new-blizzard-video"
+  }
+ ]
+}

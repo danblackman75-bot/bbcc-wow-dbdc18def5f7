@@ -1,0 +1,293 @@
+{
+ "_readme": "Edit freely. battletag: fill e.g. 'Name#1234' (name becomes clickable, copies tag). profileUrl: optional link. quotes: real chat quotes only. pick: proposed (suggestion) class/spec/race; 'stated' true if the member said it.",
+ "members": [
+  {
+   "id": "chilly",
+   "name": "Chilly",
+   "handle": "chilly69",
+   "alias": "Cody",
+   "core": true,
+   "battletag": "DeckardCain#11755",
+   "profileUrl": "",
+   "usual": "Usually tanks; unsure this time",
+   "lean": "Tank (undecided)",
+   "pick": {
+    "cls": "warrior",
+    "spec": "Protection",
+    "race": "Dwarf",
+    "stated": false
+   },
+   "alt": "Paladin (Prot/Holy)",
+   "why": "Classic-era main tank of the crew, reads fury-warrior guides for fun, and has a pally on standby. Dwarf Stoneform = -10% physical damage tank button. If he wants a break from tanking, Prot/Ret Paladin keeps the plate.",
+   "quotes": [
+    {
+     "t": "concidering im the tank, ive literly never been that nice to the guys in my life.",
+     "d": "2019-09-06"
+    },
+    {
+     "t": "LF heals any instance lvl 40",
+     "d": "2019-10-06"
+    },
+    {
+     "t": "pretty sure my pally could out dps my dh",
+     "d": "2020-12-24"
+    },
+    {
+     "t": "I hope they dont ruin this like they did wow pvp. World of stun craft.",
+     "d": "2022-04-20"
+    },
+    {
+     "t": "@Harryjones who voted horde so we can shame them?",
+     "d": "2026-09-26"
+    }
+   ]
+  },
+  {
+   "id": "harry",
+   "name": "Harry Jones",
+   "handle": "kushumaki (Harryjones)",
+   "alias": "Josh",
+   "core": true,
+   "battletag": "HarryJones#11318",
+   "profileUrl": "",
+   "usual": "Deciding between Priest and Warrior",
+   "lean": "Priest (stated) / Warrior",
+   "pick": {
+    "cls": "priest",
+    "spec": "Holy",
+    "race": "Dwarf",
+    "stated": true
+   },
+   "alt": "Warrior (Arms/Fury), fate decides",
+   "why": "Only crew member with an on-record Forever pick: Priest. Priest is A/S on healer and PvP lists (Disc/Shadow). Dwarf gets Stoneform and Fear Ward heritage; Gnome is the healing-mana pick.",
+   "quotes": [
+    {
+     "t": "I’m going priest though. But maybe I’ll let fate choose my alt",
+     "d": "2026-09-28"
+    },
+    {
+     "t": "Damn close poll",
+     "d": "2026-09-28"
+    },
+    {
+     "t": "Should go prot pally boys",
+     "d": "2021-07-14"
+    },
+    {
+     "t": "I got heals",
+     "d": "2024-02-25"
+    }
+   ]
+  },
+  {
+   "id": "donnie",
+   "name": "Donnie Darko",
+   "handle": "donniemuscle",
+   "alias": "Donnie",
+   "core": true,
+   "battletag": "donnie#1826",
+   "profileUrl": "",
+   "usual": "Usually healer",
+   "lean": "Healer",
+   "pick": {
+    "cls": "paladin",
+    "spec": "Holy",
+    "race": "Human",
+    "stated": false
+   },
+   "alt": "Druid (Resto)",
+   "why": "Crew healer and former guild organizer (ran the tabard election). Holy Paladin topped LFCarry's healer list; Human is the default Alliance paladin race. Talked Dan into Druid, so knows the class too.",
+   "quotes": [
+    {
+     "t": "I personally witnessed two different holy paladins ... out dps dps classes on multiple occasions",
+     "d": "2020-12-14"
+    },
+    {
+     "t": "Not too late to grab a boost and join the BBCC on fun adventures, dungeon grinds and epic quests all while we slay the dirty Horde",
+     "d": "2022-09-28"
+    },
+    {
+     "t": "not that kind of priest no.. think Wow's version of Mercy",
+     "d": "2022-08-05"
+    },
+    {
+     "t": "ALL ROLES HAVE BEEN TEMP SUSPENDED DUE TO MOD ABUSE/FRAUD..",
+     "d": "2022-06-03"
+    }
+   ]
+  },
+  {
+   "id": "bns",
+   "name": "BNS",
+   "handle": "bns",
+   "alias": "Steve",
+   "core": true,
+   "battletag": "drshockula#1418",
+   "profileUrl": "",
+   "usual": "Flexes roles",
+   "lean": "Flex (warlock history)",
+   "pick": {
+    "cls": "warlock",
+    "spec": "Demonology",
+    "race": "Human",
+    "stated": false
+   },
+   "alt": "Any role the comp is missing",
+   "why": "No messages from him are in the archive, but the crew calls him their warlock. Warlock is S/A in PvP lists and Demo is S in mmonster's PvP list. Because he flexes, he's the best person to fill whatever the comp is missing.",
+   "quotes": [
+    {
+     "t": "You god damn warlock SOB 😘",
+     "d": "2023-01-04",
+     "by": "Harry, about bns"
+    },
+    {
+     "t": "or warlock but steve plays warlock he will be mad",
+     "d": "2022-08-16",
+     "by": "Chilly, about bns"
+    },
+    {
+     "t": "“Classic players” lol @Chilly @bns @DonnieMuscle Demo and the gang?",
+     "d": "2023-04-12",
+     "by": "Harry"
+    }
+   ]
+  },
+  {
+   "id": "dbx",
+   "name": "dbx",
+   "handle": "dbx",
+   "alias": "Dan",
+   "core": false,
+   "battletag": "Dbx#11528",
+   "profileUrl": "",
+   "usual": "Druid lean",
+   "lean": "Druid (stated)",
+   "pick": {
+    "cls": "druid",
+    "spec": "Feral",
+    "race": "Night Elf",
+    "stated": true
+   },
+   "alt": "Resto Druid / Hunter",
+   "why": "Stated pick. Feral can off-tank or DPS, Resto heals, and Feral is A tier in PvP and the natural flag carrier. Night Elf gets Shadowmeld and Elune's Light.",
+   "quotes": [
+    {
+     "t": "But I'm going druid for this because it's a lot easier",
+     "d": "2026-09-28"
+    },
+    {
+     "t": "Donnie convinced me last night. Told me its way easier than Hunter",
+     "d": "2026-09-28"
+    },
+    {
+     "t": "Danbot. What is your main going to be in wow forever",
+     "d": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "lmk",
+   "name": "lmk",
+   "handle": "_lmk",
+   "alias": "Jonas",
+   "core": false,
+   "battletag": "hiskitten#11369",
+   "profileUrl": "",
+   "usual": "Warlock / priest history",
+   "lean": "Warlock or Priest",
+   "pick": {
+    "cls": "warlock",
+    "spec": "Affliction",
+    "race": "Gnome",
+    "stated": false
+   },
+   "alt": "Priest (Holy/Disc)",
+   "why": "On record that warlock is the move for PvP, and also claims to be the best priest healer. Affliction is A tier in PvP. Gnome gives Escape Artist and more mana.",
+   "quotes": [
+    {
+     "t": "warlock fucks in pvp",
+     "d": "2023-12-02"
+    },
+    {
+     "t": "warlock is sick tho",
+     "d": "2023-12-01"
+    },
+    {
+     "t": "no one could ever be a better priest healer than me tho",
+     "d": "2022-09-07"
+    },
+    {
+     "t": "wow classic in t-30min",
+     "d": "2019-08-26"
+    }
+   ]
+  },
+  {
+   "id": "hamfish",
+   "name": "hamfish",
+   "handle": "hamfish",
+   "alias": "Jim",
+   "core": false,
+   "battletag": "HamFish#11502",
+   "profileUrl": "",
+   "usual": "Unknown for Forever",
+   "lean": "Suggestion only",
+   "pick": {
+    "cls": "hunter",
+    "spec": "Beast Mastery",
+    "race": "Night Elf",
+    "stated": false
+   },
+   "alt": "Protection Paladin",
+   "why": "No Forever notes, so this is a SUGGESTION. He's played Alliance before. BM Hunter is S tier for leveling and dungeons, and good for someone who isn't on every night.",
+   "quotes": [
+    {
+     "t": "@Ferez and i dominated horde in cata",
+     "d": "2022-07-19"
+    },
+    {
+     "t": "LF Healer BRD have summon PST",
+     "d": "2020-02-04"
+    },
+    {
+     "t": "WoW really do be recycling through all the classic expansions huh",
+     "d": "2022-04-19"
+    }
+   ]
+  },
+  {
+   "id": "ro",
+   "name": "Russian Orthodox",
+   "handle": "Russian Orthodox",
+   "alias": "Jake",
+   "core": false,
+   "battletag": "Nightman#11890",
+   "profileUrl": "",
+   "usual": "Unknown for Forever",
+   "lean": "Suggestion only",
+   "pick": {
+    "cls": "mage",
+    "spec": "Frost",
+    "race": "Gnome",
+    "stated": false
+   },
+   "alt": "Rogue (Subtlety)",
+   "why": "No WoW class talk in the archive, so this is a SUGGESTION. Mage is S or A on every list, the fastest leveler, and the only class that makes water and portals, which fills the comp's biggest gap.",
+   "quotes": [
+    {
+     "t": "Ferez and Phactors",
+     "d": "2026-09-26",
+     "by": "naming the Horde voters"
+    },
+    {
+     "t": "Tech tip Thursday!! Let me throw my hat into the ring",
+     "d": "2023-01-05"
+    },
+    {
+     "t": "anyone for some comps? need a second tank main to carry",
+     "d": "2023-03-06"
+    }
+   ]
+  }
+ ]
+}

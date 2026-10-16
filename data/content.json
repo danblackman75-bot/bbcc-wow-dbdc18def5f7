@@ -1,0 +1,262 @@
+{
+ "guildNames": [
+  {
+   "n": "Sam Squatch",
+   "w": "Sasquatch, but Sam. Dan's pick, and it's undeniable."
+  },
+  {
+   "n": "Where Frens",
+   "w": "Chilly's catchphrase (x6), shouted into an empty voice channel"
+  },
+  {
+   "n": "World of Stun Craft",
+   "w": "Chilly, 2022, on what Blizzard did to PvP"
+  },
+  {
+   "n": "Mod Abuse",
+   "w": "Donnie's eternal investigation, now a guild"
+  },
+  {
+   "n": "Choo Choo Crew",
+   "w": "Donnie said 'choo' 8 times in the archive. Nobody knows why"
+  },
+  {
+   "n": "Dbxlol and the Bots",
+   "w": "Chilly found a 'Dbxlol' with Hand of Rag in 2019 and accuses everyone of botting"
+  },
+  {
+   "n": "Tech Tip Thursday",
+   "w": "Jake's legendary sponsored-by-Doritos tech tip"
+  },
+  {
+   "n": "Fate Randomizer",
+   "w": "Harry is letting fate choose his alt"
+  },
+  {
+   "n": "The A Team",
+   "w": "Donnie was told he 'didnt make the cut for the A Team'"
+  },
+  {
+   "n": "Chiller Instinct",
+   "w": "Epic, menacing, on brand"
+  }
+ ],
+ "presets": {
+  "PvE Dungeon Core": {
+   "faction": "Alliance",
+   "picks": {
+    "chilly": [
+     "warrior",
+     "Protection",
+     "Dwarf"
+    ],
+    "harry": [
+     "priest",
+     "Holy",
+     "Dwarf"
+    ],
+    "donnie": [
+     "paladin",
+     "Holy",
+     "Human"
+    ],
+    "bns": [
+     "warlock",
+     "Destruction",
+     "Human"
+    ],
+    "dbx": [
+     "druid",
+     "Feral",
+     "Night Elf"
+    ]
+   }
+  },
+  "PvE Alt (Pally tank)": {
+   "faction": "Alliance",
+   "picks": {
+    "chilly": [
+     "paladin",
+     "Protection",
+     "Dwarf"
+    ],
+    "harry": [
+     "warrior",
+     "Fury",
+     "Human"
+    ],
+    "donnie": [
+     "priest",
+     "Holy",
+     "Gnome"
+    ],
+    "bns": [
+     "warlock",
+     "Destruction",
+     "Human"
+    ],
+    "ro": [
+     "mage",
+     "Frost",
+     "Gnome"
+    ]
+   }
+  },
+  "PvP Squad": {
+   "faction": "Alliance",
+   "picks": {
+    "harry": [
+     "priest",
+     "Discipline",
+     "Dwarf"
+    ],
+    "donnie": [
+     "paladin",
+     "Holy",
+     "Human"
+    ],
+    "bns": [
+     "warlock",
+     "Demonology",
+     "Human"
+    ],
+    "lmk": [
+     "warlock",
+     "Affliction",
+     "Gnome"
+    ],
+    "dbx": [
+     "druid",
+     "Feral",
+     "Night Elf"
+    ]
+   }
+  },
+  "Horde PvP (if you dodge Olympus)": {
+   "faction": "Horde",
+   "picks": {
+    "chilly": [
+     "warrior",
+     "Arms",
+     "Orc"
+    ],
+    "harry": [
+     "priest",
+     "Discipline",
+     "Undead"
+    ],
+    "bns": [
+     "warlock",
+     "Demonology",
+     "Undead"
+    ],
+    "donnie": [
+     "paladin",
+     "Holy",
+     "Undead"
+    ],
+    "dbx": [
+     "druid",
+     "Feral",
+     "Tauren"
+    ]
+   }
+  },
+  "Crew Leans (stated)": {
+   "faction": "Alliance",
+   "picks": {
+    "chilly": [
+     "warrior",
+     "Protection",
+     "Dwarf"
+    ],
+    "harry": [
+     "priest",
+     "Holy",
+     "Dwarf"
+    ],
+    "donnie": [
+     "paladin",
+     "Holy",
+     "Human"
+    ],
+    "bns": [
+     "warlock",
+     "Demonology",
+     "Human"
+    ],
+    "dbx": [
+     "druid",
+     "Feral",
+     "Night Elf"
+    ]
+   }
+  }
+ },
+ "sources": [
+  [
+   "Blizzard: Carve a New Path with WoW: Forever",
+   "https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever"
+  ],
+  [
+   "Blizzard: BlizzCon 2026 round-up",
+   "https://news.blizzard.com/en-us/article/24301145/world-of-warcraft-at-blizzcon-2026-news-round-up"
+  ],
+  [
+   "Blizzard: Meet the New Skyborne",
+   "https://news.blizzard.com/en-us/article/24302071/wow-forever-meet-the-new-skyborne"
+  ],
+  [
+   "Blizzard: Choose Your Ruleset",
+   "https://news.blizzard.com/en-us/article/24302070/choose-your-ruleset-in-world-of-warcraft-forever"
+  ],
+  [
+   "Blizzard (Wowhead blue tracker): Create the Hero, races & racials",
+   "https://www.wowhead.com/forever/blue-tracker/news/us/create-the-hero-you-want-to-be-in-world-of-warcraft-forever-world-of-warcraft-24304075"
+  ],
+  [
+   "Wowhead: No More Realms",
+   "https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866"
+  ],
+  [
+   "Blizzplanet: Deep Dive transcript",
+   "https://warcraft.blizzplanet.com/blog/comments/blizzcon-2026-world-of-warcraft-forever-deep-dive-panel-transcript/4"
+  ],
+  [
+   "Half-Baked Warcraft: realmless deep dive",
+   "https://halfbakedwarcraft.com/news/forever-deep-dive-realmless-camping-legacy/"
+  ],
+  [
+   "endgametools: tier list roundup",
+   "https://endgametools.com/en/wow-forever/news/wow-forever-tier-list"
+  ],
+  [
+   "mmonster: tier lists",
+   "https://mmonster.co/wow-forever/guides/tier-lists"
+  ],
+  [
+   "mmonster: rulesets",
+   "https://mmonster.co/wow-forever/guides/pvp/rulesets"
+  ],
+  [
+   "wowforevertierlist: best race per class",
+   "https://wowforevertierlist.com/races/best-race-for-each-class"
+  ],
+  [
+   "wowforevertierlist: race tiers",
+   "https://wowforevertierlist.com/tier-list/races"
+  ],
+  [
+   "wowforevertierlist: PvP tiers",
+   "https://wowforevertierlist.com/tier-list/pvp"
+  ],
+  [
+   "Mobalytics: racial tier list",
+   "https://mobalytics.gg/wow-forever/tier-lists/racials"
+  ],
+  [
+   "timesaver.gg: PvP tier list",
+   "https://timesaver.gg/blog/wow-forever-best-pvp-class-tier-list"
+  ]
+ ]
+}

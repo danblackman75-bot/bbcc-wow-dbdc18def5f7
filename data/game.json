@@ -1,0 +1,720 @@
+{
+ "_readme": "Spec tiers are a BBCC synthesis of the public beta lists (level 30 cap, Oct 2026). attrs are 1-10 for Range, Raids, Dungeons, Leveling, Utility, PvP. util tags feed the comp-builder checks.",
+ "classes": {
+  "druid": {
+   "name": "Druid",
+   "color": "#FF7C0A",
+   "icon": "🌿",
+   "specs": {
+    "Balance": {
+     "role": "dps",
+     "pve": "C",
+     "pvp": "B",
+     "attrs": [
+      8,
+      4,
+      5,
+      5,
+      7,
+      6
+     ]
+    },
+    "Feral": {
+     "role": "tank/dps",
+     "pve": "B",
+     "pvp": "A",
+     "attrs": [
+      2,
+      6,
+      7,
+      7,
+      7,
+      8
+     ]
+    },
+    "Restoration": {
+     "role": "heal",
+     "pve": "B",
+     "pvp": "A",
+     "attrs": [
+      7,
+      7,
+      7,
+      4,
+      8,
+      8
+     ]
+    }
+   },
+   "util": [
+    "battle res",
+    "innervate",
+    "curse dispel",
+    "poison dispel",
+    "mark of the wild",
+    "interrupt(bash)"
+   ]
+  },
+  "hunter": {
+   "name": "Hunter",
+   "color": "#AAD372",
+   "icon": "🏹",
+   "specs": {
+    "Beast Mastery": {
+     "role": "dps",
+     "pve": "S",
+     "pvp": "A",
+     "attrs": [
+      9,
+      6,
+      8,
+      10,
+      6,
+      8
+     ]
+    },
+    "Marksmanship": {
+     "role": "dps",
+     "pve": "A",
+     "pvp": "A",
+     "attrs": [
+      10,
+      7,
+      7,
+      8,
+      6,
+      8
+     ]
+    },
+    "Survival": {
+     "role": "dps",
+     "pve": "A",
+     "pvp": "B",
+     "attrs": [
+      8,
+      9,
+      7,
+      7,
+      6,
+      6
+     ]
+    }
+   },
+   "util": [
+    "trueshot aura",
+    "tranq shot",
+    "pull/feign",
+    "cc(trap)"
+   ]
+  },
+  "mage": {
+   "name": "Mage",
+   "color": "#3FC7EB",
+   "icon": "❄️",
+   "specs": {
+    "Arcane": {
+     "role": "dps",
+     "pve": "A",
+     "pvp": "B",
+     "attrs": [
+      9,
+      8,
+      7,
+      7,
+      8,
+      7
+     ]
+    },
+    "Fire": {
+     "role": "dps",
+     "pve": "A",
+     "pvp": "B",
+     "attrs": [
+      9,
+      8,
+      7,
+      6,
+      7,
+      6
+     ]
+    },
+    "Frost": {
+     "role": "dps",
+     "pve": "A",
+     "pvp": "S",
+     "attrs": [
+      9,
+      7,
+      8,
+      10,
+      8,
+      9
+     ]
+    }
+   },
+   "util": [
+    "arcane intellect",
+    "curse dispel",
+    "interrupt(counterspell)",
+    "cc(poly)",
+    "food/water",
+    "portals"
+   ]
+  },
+  "paladin": {
+   "name": "Paladin",
+   "color": "#F48CBA",
+   "icon": "🛡️",
+   "specs": {
+    "Holy": {
+     "role": "heal",
+     "pve": "S",
+     "pvp": "A",
+     "attrs": [
+      6,
+      9,
+      8,
+      4,
+      9,
+      7
+     ]
+    },
+    "Protection": {
+     "role": "tank",
+     "pve": "S",
+     "pvp": "B",
+     "attrs": [
+      3,
+      8,
+      10,
+      6,
+      8,
+      6
+     ]
+    },
+    "Retribution": {
+     "role": "dps",
+     "pve": "B",
+     "pvp": "S",
+     "attrs": [
+      2,
+      6,
+      6,
+      10,
+      8,
+      10
+     ]
+    }
+   },
+   "util": [
+    "blessings",
+    "magic dispel",
+    "poison dispel",
+    "disease dispel",
+    "stun",
+    "bubble"
+   ]
+  },
+  "priest": {
+   "name": "Priest",
+   "color": "#FFFFFF",
+   "icon": "✨",
+   "specs": {
+    "Discipline": {
+     "role": "heal",
+     "pve": "A",
+     "pvp": "S",
+     "attrs": [
+      7,
+      7,
+      9,
+      4,
+      9,
+      9
+     ]
+    },
+    "Holy": {
+     "role": "heal",
+     "pve": "A",
+     "pvp": "B",
+     "attrs": [
+      7,
+      9,
+      7,
+      4,
+      8,
+      6
+     ]
+    },
+    "Shadow": {
+     "role": "dps",
+     "pve": "B",
+     "pvp": "A",
+     "attrs": [
+      8,
+      6,
+      6,
+      7,
+      7,
+      9
+     ]
+    }
+   },
+   "util": [
+    "fortitude",
+    "magic dispel",
+    "disease dispel",
+    "fear",
+    "silence"
+   ]
+  },
+  "rogue": {
+   "name": "Rogue",
+   "color": "#FFF468",
+   "icon": "🗡️",
+   "specs": {
+    "Assassination": {
+     "role": "dps",
+     "pve": "A",
+     "pvp": "A",
+     "attrs": [
+      1,
+      7,
+      7,
+      6,
+      6,
+      8
+     ]
+    },
+    "Combat": {
+     "role": "dps",
+     "pve": "A",
+     "pvp": "B",
+     "attrs": [
+      1,
+      8,
+      9,
+      7,
+      6,
+      6
+     ]
+    },
+    "Subtlety": {
+     "role": "dps",
+     "pve": "C",
+     "pvp": "S",
+     "attrs": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      10
+     ]
+    }
+   },
+   "util": [
+    "interrupt(kick)",
+    "cc(sap/blind)",
+    "stealth scout",
+    "lockpicking"
+   ]
+  },
+  "shaman": {
+   "name": "Shaman",
+   "color": "#0070DD",
+   "icon": "⚡",
+   "specs": {
+    "Elemental": {
+     "role": "dps",
+     "pve": "B",
+     "pvp": "A",
+     "attrs": [
+      8,
+      6,
+      6,
+      6,
+      8,
+      8
+     ]
+    },
+    "Enhancement": {
+     "role": "dps",
+     "pve": "B",
+     "pvp": "B",
+     "attrs": [
+      2,
+      6,
+      6,
+      8,
+      8,
+      7
+     ]
+    },
+    "Restoration": {
+     "role": "heal",
+     "pve": "A",
+     "pvp": "A",
+     "attrs": [
+      6,
+      9,
+      8,
+      4,
+      10,
+      7
+     ]
+    }
+   },
+   "util": [
+    "totems",
+    "interrupt(earth shock)",
+    "poison dispel",
+    "disease dispel",
+    "purge",
+    "reincarnation"
+   ]
+  },
+  "warlock": {
+   "name": "Warlock",
+   "color": "#8788EE",
+   "icon": "💀",
+   "specs": {
+    "Affliction": {
+     "role": "dps",
+     "pve": "B",
+     "pvp": "A",
+     "attrs": [
+      9,
+      7,
+      6,
+      8,
+      7,
+      9
+     ]
+    },
+    "Demonology": {
+     "role": "dps",
+     "pve": "B",
+     "pvp": "S",
+     "attrs": [
+      9,
+      6,
+      6,
+      9,
+      8,
+      10
+     ]
+    },
+    "Destruction": {
+     "role": "dps",
+     "pve": "A",
+     "pvp": "B",
+     "attrs": [
+      9,
+      8,
+      7,
+      6,
+      6,
+      7
+     ]
+    }
+   },
+   "util": [
+    "summon",
+    "healthstones",
+    "soulstone res",
+    "fear",
+    "curses",
+    "interrupt(felhunter)"
+   ]
+  },
+  "warrior": {
+   "name": "Warrior",
+   "color": "#C69B6D",
+   "icon": "⚔️",
+   "specs": {
+    "Arms": {
+     "role": "dps",
+     "pve": "B",
+     "pvp": "A",
+     "attrs": [
+      1,
+      6,
+      6,
+      6,
+      6,
+      8
+     ]
+    },
+    "Fury": {
+     "role": "dps",
+     "pve": "S",
+     "pvp": "C",
+     "attrs": [
+      1,
+      10,
+      7,
+      5,
+      5,
+      5
+     ]
+    },
+    "Protection": {
+     "role": "tank",
+     "pve": "A",
+     "pvp": "C",
+     "attrs": [
+      1,
+      9,
+      9,
+      4,
+      6,
+      5
+     ]
+    }
+   },
+   "util": [
+    "battle shout",
+    "interrupt(pummel)",
+    "demo shout",
+    "taunt"
+   ]
+  }
+ },
+ "races": {
+  "Alliance": {
+   "Human": [
+    "hunter",
+    "mage",
+    "paladin",
+    "priest",
+    "rogue",
+    "warlock",
+    "warrior"
+   ],
+   "Dwarf": [
+    "hunter",
+    "paladin",
+    "priest",
+    "rogue",
+    "shaman",
+    "warrior"
+   ],
+   "Night Elf": [
+    "druid",
+    "hunter",
+    "priest",
+    "rogue",
+    "warrior"
+   ],
+   "Gnome": [
+    "mage",
+    "priest",
+    "rogue",
+    "warlock",
+    "warrior"
+   ],
+   "High Order Skyborne": [
+    "druid",
+    "hunter",
+    "mage",
+    "rogue",
+    "warrior"
+   ]
+  },
+  "Horde": {
+   "Orc": [
+    "hunter",
+    "mage",
+    "rogue",
+    "shaman",
+    "warlock",
+    "warrior"
+   ],
+   "Tauren": [
+    "druid",
+    "hunter",
+    "shaman",
+    "warrior"
+   ],
+   "Troll": [
+    "hunter",
+    "mage",
+    "priest",
+    "rogue",
+    "shaman",
+    "warlock",
+    "warrior"
+   ],
+   "Undead": [
+    "mage",
+    "paladin",
+    "priest",
+    "rogue",
+    "warlock",
+    "warrior"
+   ],
+   "Windshaper Skyborne": [
+    "druid",
+    "hunter",
+    "rogue",
+    "shaman",
+    "warrior"
+   ]
+  }
+ },
+ "raceTier": {
+  "Orc": "S",
+  "Human": "S",
+  "Undead": "A",
+  "Night Elf": "A",
+  "Troll": "A",
+  "Gnome": "A",
+  "Tauren": "A",
+  "Dwarf": "B",
+  "High Order Skyborne": "B",
+  "Windshaper Skyborne": "C"
+ },
+ "racials": {
+  "Human": [
+   "Will to Survive: removes stuns",
+   "Perception: detect stealth 20s",
+   "Ruthless: +2% crit (replaced Sword Spec)",
+   "Human Spirit: +5% Spirit"
+  ],
+  "Dwarf": [
+   "Stoneform: bleed/poison/disease immunity, -10% physical dmg 8s",
+   "Find Treasure: also chance for extra chest items",
+   "Earth Fury: +2% crit damage & healing (replaced Mace Spec)",
+   "Big Game Hunter: +5% dmg vs Beasts"
+  ],
+  "Night Elf": [
+   "Elune's Light: +10% crit 15s",
+   "Shadowmeld",
+   "Quickness: +1% dodge, +2% speed (now stacks)",
+   "Wisp Spirit"
+  ],
+  "Gnome": [
+   "Escape Artist: root/snare immunity",
+   "Eureka!: 8s buff, +10% dmg & cheaper abilities (no charges; works with PW:Shield)",
+   "Expansive Mind: +5% max mana/rage/energy",
+   "Engineering Spec"
+  ],
+  "High Order Skyborne": [
+   "Walk on Air: glide (90s CD)",
+   "Read Ley Line: +100% health/mana regen (castable moving)",
+   "Wind Blessed: +3% haste (was 1%)",
+   "Elemental Insight: +5% vs Elementals"
+  ],
+  "Orc": [
+   "Blood Fury: +10% AP & SP 15s (3 min CD, was 2)",
+   "Shatter Curse: dispels Curses/Banes, -5% magic dmg 8s (was 15%)",
+   "Savage: +1% crit (replaced Axe Spec)",
+   "Hardiness: -20% stun duration"
+  ],
+  "Undead": [
+   "Will of the Forsaken: breaks charm/fear/sleep (not while Scatter Shot'd)",
+   "Cannibalize: 35% health & mana",
+   "Underwater Breathing",
+   "Touch of the Grave: more consistent proc (30% casters/20% melee, 25s ICD)"
+  ],
+  "Tauren": [
+   "War Stomp: 2s AoE stun (90s CD, was 2 min)",
+   "Cultivation (15 min CD, was 60)",
+   "Plainsrunning: speed while moving, +3% mounted speed",
+   "Endurance: +5% HP, +2% crit damage & healing (was +1% hit)"
+  ],
+  "Troll": [
+   "Berserking: +10% haste 10s",
+   "Rapid Regeneration: 50% HP over time",
+   "Beast Slaying: +5% vs Beasts",
+   "Regeneration: 20% in combat (was 10%)"
+  ],
+  "Windshaper Skyborne": [
+   "Walk on Air: glide (90s CD)",
+   "Skysight: +10% run speed (castable moving)",
+   "Wind Blessed: +3% haste (was 1%)",
+   "Elemental Insight: +5% vs Elementals"
+  ]
+ },
+ "bestRace": [
+  [
+   "druid",
+   "Night Elf (HO Skyborne)",
+   "Tauren",
+   "Night Elf",
+   "Tauren"
+  ],
+  [
+   "hunter",
+   "Night Elf or Human",
+   "Orc (Troll)",
+   "Human",
+   "Orc"
+  ],
+  [
+   "mage",
+   "Gnome (Human)",
+   "Orc (Troll)",
+   "Gnome",
+   "Undead"
+  ],
+  [
+   "paladin",
+   "Human; Dwarf for Prot",
+   "Undead (only)",
+   "Human",
+   "Undead (only)"
+  ],
+  [
+   "priest",
+   "Night Elf Shadow; Gnome heals",
+   "Undead",
+   "Gnome (Dwarf)",
+   "Undead (Troll)"
+  ],
+  [
+   "rogue",
+   "Human",
+   "Orc (Troll)",
+   "Human",
+   "Undead (Orc)"
+  ],
+  [
+   "shaman",
+   "Dwarf (only)",
+   "Orc; Troll for Resto",
+   "Dwarf (only)",
+   "Tauren (Orc)"
+  ],
+  [
+   "warlock",
+   "Human (Gnome)",
+   "Orc (Troll)",
+   "Human",
+   "Undead"
+  ],
+  [
+   "warrior",
+   "Human; Dwarf for Prot",
+   "Orc; Tauren for Prot",
+   "Human (Gnome)",
+   "Orc (Undead)"
+  ]
+ ],
+ "bestRaceWhy": {
+  "druid": "Night Elf Elune's Light crit burst and Shadowmeld; Tauren War Stomp + Endurance HP for bear/PvP.",
+  "hunter": "Orc Blood Fury now buffs AP for pets and the hunter; Human stun break for PvP.",
+  "mage": "Gnome Eureka! burst + Escape Artist vs roots; Undead fear break on Horde.",
+  "paladin": "Human Will to Survive and Ruthless crit; Dwarf Stoneform for tanking; Undead is Horde's only Paladin.",
+  "priest": "Gnome mana for healers; Undead Will of the Forsaken + Cannibalize mana.",
+  "rogue": "Human Ruthless crit + stun break; Orc Blood Fury; Undead in PvP.",
+  "shaman": "Dwarf is the only Alliance Shaman; Orc burst; Troll Berserking for Resto haste.",
+  "warlock": "Human stun break; Orc Blood Fury SP; Undead fear break.",
+  "warrior": "Human Ruthless crit + stun break; Dwarf Stoneform & Tauren HP for tanks; Orc Blood Fury + stun resist."
+ },
+ "racialsNote": {
+  "t": "Beta data, re-tuned Oct 16: weapon specs replaced (Human Ruthless, Orc Savage, Dwarf Earth Fury), Blood Fury 3 min CD, Shatter Curse nerfed, Skyborne haste 3%, Tauren/Troll buffs.",
+  "url": "https://www.wowhead.com/news=383454/massive-racial-updates-wow-forever-beta-development-notes"
+ }
+}
