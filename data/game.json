@@ -704,17 +704,17 @@
  ],
  "bestRaceWhy": {
   "druid": "Night Elf Elune's Light crit burst and Shadowmeld; Tauren War Stomp + Endurance HP for bear/PvP.",
-  "hunter": "Orc Blood Fury now buffs AP for pets and the hunter; Human stun break for PvP.",
+  "hunter": "Orc Blood Fury (+10% AP) and Hardiness; Human Will to Survive stun break for PvP; Night Elf Elune's Light for Alliance PvE.",
   "mage": "Gnome Eureka! burst + Escape Artist vs roots; Undead fear break on Horde.",
   "paladin": "Human Will to Survive and Ruthless crit; Dwarf Stoneform for tanking; Undead is Horde's only Paladin.",
-  "priest": "Gnome mana for healers; Undead Will of the Forsaken + Cannibalize mana.",
+  "priest": "Gnome mana (Expansive Mind) for healers, Night Elf for Shadow; Undead Will of the Forsaken + Cannibalize mana.",
   "rogue": "Human Ruthless crit + stun break; Orc Blood Fury; Undead in PvP.",
   "shaman": "Dwarf is the only Alliance Shaman; Orc burst; Troll Berserking for Resto haste.",
   "warlock": "Human stun break; Orc Blood Fury SP; Undead fear break.",
   "warrior": "Human Ruthless crit + stun break; Dwarf Stoneform & Tauren HP for tanks; Orc Blood Fury + stun resist."
  },
  "racialsNote": {
-  "t": "Beta data, re-tuned Oct 16: weapon specs replaced (Human Ruthless, Orc Savage, Dwarf Earth Fury), Blood Fury 3 min CD, Shatter Curse nerfed, Skyborne haste 3%, Tauren/Troll buffs.",
+  "t": "Weapon specs replaced (Human Ruthless, Orc Savage, Dwarf Earth Fury), Blood Fury now a 3 min CD, Shatter Curse nerfed, Skyborne haste up to 3%, Tauren/Troll buffs. Race tiers and best-race picks below predate this patch.",
   "url": "https://www.wowhead.com/news=383454/massive-racial-updates-wow-forever-beta-development-notes"
  }
 }

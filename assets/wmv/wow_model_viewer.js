@@ -36,7 +36,7 @@ class WowModelViewer extends ZamModelViewer {
     }
 
     /**
-     * Set azimuth value this value is the angle to the azimuth based on PI
+     * Set azimuth value this value is the angle to the azimuth, in radians
      * @param {number} val
      */
     setAzimuth(val) {
@@ -44,7 +44,7 @@ class WowModelViewer extends ZamModelViewer {
     }
 
     /**
-     * Set zenith value this value is the angle to the azimuth based on PI
+     * Set zenith value this value is the angle to the azimuth, in radians
      * @param {number} val
      */
     setZenith(val) {
@@ -52,7 +52,7 @@ class WowModelViewer extends ZamModelViewer {
     }
 
     /**
-     * Returns azimuth value this value is the angle to the azimuth based on PI
+     * Returns azimuth value this value is the angle to the azimuth, in radians
      * @return {number}
      */
     getAzimuth() {
@@ -60,7 +60,7 @@ class WowModelViewer extends ZamModelViewer {
     }
 
     /**
-     * Returns zenith value this value is the angle to the azimuth based on PI
+     * Returns zenith value this value is the angle to the azimuth, in radians
      * @return {number}
      */
     getZenith() {
@@ -68,7 +68,7 @@ class WowModelViewer extends ZamModelViewer {
     }
 
     /**
-     * This methode is based on `updateViewer` from Paperdoll.js (https://wow.zamimg.com/js/Paperdoll.js?3ee7ec5121)
+     * This method adapts `updateViewer` from Paperdoll.js (https://wow.zamimg.com/js/Paperdoll.js?3ee7ec5121)
      *
      * @param slot {number}: Item slot number
      * @param displayId {number}: Item display id

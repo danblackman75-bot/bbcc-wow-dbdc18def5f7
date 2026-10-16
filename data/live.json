@@ -6,29 +6,25 @@
    "d": "2026-12-09",
    "t": "Raids open (first raid tier)",
    "src": "wowforevertierlist.com",
-   "url": "https://wowforevertierlist.com/races/best-race-for-each-class",
-   "future": true
+   "url": "https://wowforevertierlist.com/races/best-race-for-each-class"
   },
   {
    "d": "2026-11-04",
-   "t": "WoW: Forever launches globally, 3:00 PM PT / 6:00 PM ET. Included with a WoW subscription",
+   "t": "WoW: Forever launches globally, 3:00 PM PT / 6:00 PM ET. Included with a WoW subscription or Game Time",
    "src": "Blizzard News",
-   "url": "https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever",
-   "future": true
+   "url": "https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever"
   },
   {
    "d": "2026-10-27",
    "t": "Name reservation window opens (through Nov 3)",
    "src": "timesaver.gg",
-   "url": "https://timesaver.gg/blog/wow-forever-best-pvp-class-tier-list",
-   "future": true
+   "url": "https://timesaver.gg/blog/wow-forever-best-pvp-class-tier-list"
   },
   {
    "d": "2026-10-17",
-   "t": "The Forever Open: Level-30 Horde dueling tournament on the PvP ruleset, hosted by Esfand & Xaryu (Oct 17–18)",
+   "t": "The Forever Open: level-30 Horde duel tournament on the PvP ruleset, hosted by Esfand and Xaryu (Oct 17-18). Prize: $50,000 in the original post, $100,000 per later coverage",
    "src": "Esfand on X",
-   "url": "https://x.com/EsfandTV/status/2104314023978160220",
-   "future": true
+   "url": "https://x.com/EsfandTV/status/2104314023978160220"
   },
   {
    "d": "2026-10-13",
@@ -50,7 +46,7 @@
   },
   {
    "d": "2026-10-01",
-   "t": "Class rework lands in beta; Cannibalize can no longer be used during Divine Shield",
+   "t": "Class rework lands in beta; Cannibalize can no longer be used while immune (e.g. Divine Shield)",
    "src": "wowforevertierlist.com",
    "url": "https://wowforevertierlist.com/tier-list/races"
   },
@@ -162,7 +158,8 @@
    "d": "2026-09-27",
    "q": "📅Dates: Oct 17/18 📜Ruleset: PVP 🔴Faction: Horde ➕Level: 30 💰Prize Pool: $50,000",
    "url": "https://x.com/EsfandTV/status/2104314023978160220",
-   "tag": "PvP"
+   "tag": "PvP",
+   "note": "Later coverage (timesaver.gg, Wowhead) lists the prize pool as $100,000."
   },
   {
    "who": "Maximum",
@@ -192,12 +189,12 @@
  "asmon": {
   "facts": [
    {
-    "t": "Olympus is a network of dozens of guilds sharing one name and tabard, built on the ALLIANCE side of the PvP ruleset during the beta.",
+    "t": "Olympus is a network of dozens of guilds sharing one name and tabard, built on the Alliance side of the PvP ruleset during the beta.",
     "src": "olympuswow.com guide",
     "url": "https://olympuswow.com/blog/asmongold-olympus-wow.html"
    },
    {
-    "t": "Size: 30,000+ (his own count, Sep 23), 40,000+ per the Olympus addon census by week two.",
+    "t": "Size: 30,000+ by his count (Sep 23), 40,000+ by the Olympus addon census in week two.",
     "src": "Asmongold on X / olympuswow.com",
     "url": "https://x.com/Asmongold/status/2102595317803721048"
    },
@@ -207,7 +204,7 @@
     "url": "https://wofwforever.com/en/guides/wow-forever-olympus-guild/"
    },
    {
-    "t": "PARAPHRASE (translated from Polish coverage): on stream he described a plan for Olympus to monopolize rare crafting recipes so outsiders must join for free crafting ('treat it like a tariff').",
+    "t": "Reportedly plans for Olympus to corner rare crafting recipes so outsiders have to join for free crafting ('treat it like a tariff').",
     "src": "GRYOnline.pl, Oct 5",
     "url": "https://www.gry-online.pl/newsroom/potraktujcie-to-jak-clo-asmongold-otwarcie-planuje-psucie-ekonomi/za31e01"
    },
@@ -217,7 +214,7 @@
     "url": "https://www.sportskeeda.com/us/streamers/news-asmongold-claims-big-plan-will-involve-everyone-case-controversial-guild-world-warcraft-forever-gets-disbanded"
    }
   ],
-  "verdict": "Alliance + PvP ruleset. If the BBCC wants quiet Alliance PvP questing, expect a sea of Olympus tabards. Horde PvP or the Normal ruleset avoids the zerg."
+  "verdict": "Alliance + PvP ruleset. Alliance PvP will be a sea of Olympus tabards; Normal skips the zerg."
  },
  "trends": [
   {
@@ -245,15 +242,15 @@
    "url": "https://wowforevertierlist.com/tier-list/races"
   },
   {
-   "k": "Faction chatter",
-   "v": "Alliance-heavy PvP",
-   "n": "Redditors guess slightly more Alliance on PvP, more Horde on Normal; Olympus is Alliance",
-   "url": "https://www.reddit.com/r/classicwow/comments/1wp62xr/wow_forever_pvp_servers_for_horde/"
+   "k": "Top PvP spec",
+   "v": "Ret Paladin",
+   "n": "S tier on the Oct 12 PvP list: \"Blizzard's golden boy\"",
+   "url": "https://wowforevertierlist.com/tier-list/pvp"
   },
   {
    "k": "Streamer guilds",
    "v": "Olympus (Alliance PvP)",
-   "n": "30k–40k members; Sodapoppin reportedly went Horde to dodge it",
+   "n": "30k-40k members; Sodapoppin reportedly went Horde to dodge it",
    "url": "https://wofwforever.com/en/guides/wow-forever-olympus-guild/"
   }
  ],

@@ -5,44 +5,44 @@
    "w": "Sasquatch, but Sam. Undeniable."
   },
   {
-   "n": "Where Frens",
-   "w": "Chilly's catchphrase (x6), shouted into an empty voice channel"
-  },
-  {
    "n": "World of Stun Craft",
-   "w": "Chilly, 2022, on what Blizzard did to PvP"
+   "w": "Chilly's 2022 review of modern PvP"
   },
   {
-   "n": "Mod Abuse",
-   "w": "Donnie's eternal investigation, now a guild"
+   "n": "Slay the Dirty Horde",
+   "w": "Donnie's battle cry on the road to the Lich King"
   },
   {
-   "n": "Choo Choo Crew",
-   "w": "Donnie said 'choo' 8 times in the archive. Nobody knows why"
+   "n": "LF Heals",
+   "w": "Chilly, 2019. Still looking."
   },
   {
-   "n": "Dbxlol and the Bots",
-   "w": "Chilly found a 'Dbxlol' with Hand of Rag in 2019 and accuses everyone of botting"
+   "n": "Way Easier Than Hunter",
+   "w": "The pitch that sold a Druid"
   },
   {
-   "n": "Tech Tip Thursday",
-   "w": "Jake's legendary sponsored-by-Doritos tech tip"
+   "n": "Demo and the Gang",
+   "w": "Harry rounding up the warlocks"
   },
   {
    "n": "Fate Randomizer",
-   "w": "Harry is letting fate choose his alt"
+   "w": "Harry is letting fate pick his alt"
   },
   {
-   "n": "The A Team",
-   "w": "Donnie was told he 'didnt make the cut for the A Team'"
+   "n": "Damn Close Poll",
+   "w": "Harry on the faction vote"
+  },
+  {
+   "n": "Out DPS My DH",
+   "w": "Chilly's pally, allegedly"
   },
   {
    "n": "Chiller Instinct",
-   "w": "Epic, menacing, on brand"
+   "w": "Menacing. On brand."
   }
  ],
  "presets": {
-  "PvE Dungeon Core": {
+  "Dungeon core": {
    "faction": "Alliance",
    "picks": {
     "chilly": [
@@ -72,7 +72,7 @@
     ]
    }
   },
-  "PvE Alt (Pally tank)": {
+  "Pally tank": {
    "faction": "Alliance",
    "picks": {
     "chilly": [
@@ -102,7 +102,7 @@
     ]
    }
   },
-  "PvP Squad": {
+  "PvP squad": {
    "faction": "Alliance",
    "picks": {
     "harry": [
@@ -132,37 +132,7 @@
     ]
    }
   },
-  "Horde PvP (if you dodge Olympus)": {
-   "faction": "Horde",
-   "picks": {
-    "chilly": [
-     "warrior",
-     "Arms",
-     "Orc"
-    ],
-    "harry": [
-     "priest",
-     "Discipline",
-     "Undead"
-    ],
-    "bns": [
-     "warlock",
-     "Demonology",
-     "Undead"
-    ],
-    "donnie": [
-     "paladin",
-     "Holy",
-     "Undead"
-    ],
-    "dbx": [
-     "druid",
-     "Feral",
-     "Tauren"
-    ]
-   }
-  },
-  "Crew Leans (stated)": {
+  "Crew leans": {
    "faction": "Alliance",
    "picks": {
     "chilly": [
@@ -191,6 +161,36 @@
      "Night Elf"
     ]
    }
+  },
+  "Horde vs Olympus": {
+   "faction": "Horde",
+   "picks": {
+    "chilly": [
+     "warrior",
+     "Arms",
+     "Orc"
+    ],
+    "harry": [
+     "priest",
+     "Discipline",
+     "Undead"
+    ],
+    "bns": [
+     "warlock",
+     "Demonology",
+     "Undead"
+    ],
+    "donnie": [
+     "paladin",
+     "Holy",
+     "Undead"
+    ],
+    "dbx": [
+     "druid",
+     "Feral",
+     "Tauren"
+    ]
+   }
   }
  },
  "sources": [
@@ -217,10 +217,6 @@
   [
    "Wowhead: No More Realms",
    "https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866"
-  ],
-  [
-   "Blizzplanet: Deep Dive transcript",
-   "https://warcraft.blizzplanet.com/blog/comments/blizzcon-2026-world-of-warcraft-forever-deep-dive-panel-transcript/4"
   ],
   [
    "Half-Baked Warcraft: realmless deep dive",

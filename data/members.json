@@ -1,5 +1,5 @@
 {
- "_readme": "Edit freely. battletag: fill e.g. 'Name#1234' (name becomes clickable, copies tag). profileUrl: optional link. quotes: real chat quotes only. pick: proposed (suggestion) class/spec/race; 'stated' true if the member said it.",
+ "_readme": "Edit freely. First names only; no BattleTags or personal info. profileUrl: optional link. quotes must match research/research.md. pick: class/spec/race; stated=true only if the member said it.",
  "members": [
   {
    "id": "chilly",
@@ -7,7 +7,6 @@
    "handle": "chilly69",
    "alias": "Cody",
    "core": true,
-   "battletag": "DeckardCain#11755",
    "profileUrl": "",
    "usual": "Usually tanks; unsure this time",
    "lean": "Tank (undecided)",
@@ -18,7 +17,7 @@
     "stated": false
    },
    "alt": "Paladin (Prot/Holy)",
-   "why": "Classic-era main tank of the crew, reads fury-warrior guides for fun, and has a pally on standby. Dwarf Stoneform = -10% physical damage tank button. If he wants a break from tanking, Prot/Ret Paladin keeps the plate.",
+   "why": "The crew's main tank since Classic 2019. Dwarf Stoneform is a free 'take less damage' button. Needs a break? Prot Paladin keeps the plate on.",
    "quotes": [
     {
      "t": "concidering im the tank, ive literly never been that nice to the guys in my life.",
@@ -37,18 +36,17 @@
      "d": "2022-04-20"
     },
     {
-     "t": "@Harryjones who voted horde so we can shame them?",
+     "t": "@Harry who voted horde so we can shame them?",
      "d": "2026-09-26"
     }
    ]
   },
   {
    "id": "harry",
-   "name": "Harry Jones",
-   "handle": "kushumaki (Harryjones)",
+   "name": "Harry",
+   "handle": "kushumaki",
    "alias": "Josh",
    "core": true,
-   "battletag": "HarryJones#11318",
    "profileUrl": "",
    "usual": "Deciding between Priest and Warrior",
    "lean": "Priest (stated) / Warrior",
@@ -59,7 +57,7 @@
     "stated": true
    },
    "alt": "Warrior (Arms/Fury), fate decides",
-   "why": "Only crew member with an on-record Forever pick: Priest. Priest is A/S on healer and PvP lists (Disc/Shadow). Dwarf gets Stoneform and Fear Ward heritage; Gnome is the healing-mana pick.",
+   "why": "Already called it: Priest. Strong for heals and PvP. Dwarf for Stoneform, Gnome for extra mana. Warrior if fate insists.",
    "quotes": [
     {
      "t": "I’m going priest though. But maybe I’ll let fate choose my alt",
@@ -85,7 +83,6 @@
    "handle": "donniemuscle",
    "alias": "Donnie",
    "core": true,
-   "battletag": "donnie#1826",
    "profileUrl": "",
    "usual": "Usually healer",
    "lean": "Healer",
@@ -96,23 +93,11 @@
     "stated": false
    },
    "alt": "Druid (Resto)",
-   "why": "Crew healer and former guild organizer (ran the tabard election). Holy Paladin topped LFCarry's healer list; Human is the default Alliance paladin race.",
+   "why": "The healer. Holy Paladin sits on top of the healer lists, and Human is the go-to Alliance paladin.",
    "quotes": [
     {
-     "t": "I personally witnessed two different holy paladins ... out dps dps classes on multiple occasions",
-     "d": "2020-12-14"
-    },
-    {
-     "t": "Not too late to grab a boost and join the BBCC on fun adventures, dungeon grinds and epic quests all while we slay the dirty Horde",
-     "d": "2022-09-28"
-    },
-    {
-     "t": "not that kind of priest no.. think Wow's version of Mercy",
-     "d": "2022-08-05"
-    },
-    {
-     "t": "ALL ROLES HAVE BEEN TEMP SUSPENDED DUE TO MOD ABUSE/FRAUD..",
-     "d": "2022-06-03"
+     "t": "slay the dirty Horde on our way to defeat the Lich King",
+     "d": "2022"
     }
    ]
   },
@@ -122,7 +107,6 @@
    "handle": "bns",
    "alias": "Steve",
    "core": true,
-   "battletag": "drshockula#1418",
    "profileUrl": "",
    "usual": "Flexes roles",
    "lean": "Flex (warlock history)",
@@ -133,7 +117,7 @@
     "stated": false
    },
    "alt": "Any role the comp is missing",
-   "why": "No messages from him are in the archive, but the crew calls him their warlock. Warlock is S/A in PvP lists and Demo is S in mmonster's PvP list. Because he flexes, he's the best person to fill whatever the comp is missing.",
+   "why": "The crew's warlock, by popular demand. Demo is a top PvP pick, and he'll flex into whatever the party is missing.",
    "quotes": [
     {
      "t": "You god damn warlock SOB 😘",
@@ -158,7 +142,6 @@
    "handle": "dbx",
    "alias": "",
    "core": false,
-   "battletag": "Dbx#11528",
    "profileUrl": "",
    "usual": "Druid lean",
    "lean": "Druid (stated)",
@@ -169,7 +152,7 @@
     "stated": true
    },
    "alt": "Resto Druid / Hunter",
-   "why": "Stated pick. Feral can off-tank or DPS, Resto heals, and Feral is A tier in PvP and the natural flag carrier. Night Elf gets Shadowmeld and Elune's Light.",
+   "why": "Going Druid. Feral can tank in a pinch, hits hard in PvP and carries flags. Night Elf for Shadowmeld.",
    "quotes": [
     {
      "t": "But I'm going druid for this because it's a lot easier",
@@ -178,10 +161,6 @@
     {
      "t": "Donnie convinced me last night. Told me its way easier than Hunter",
      "d": "2026-09-28"
-    },
-    {
-     "t": "Danbot. What is your main going to be in wow forever",
-     "d": "2026-10-15"
     }
    ]
   },
@@ -189,9 +168,8 @@
    "id": "lmk",
    "name": "lmk",
    "handle": "_lmk",
-   "alias": "Jonas",
+   "alias": "",
    "core": false,
-   "battletag": "hiskitten#11369",
    "profileUrl": "",
    "usual": "Warlock / priest history",
    "lean": "Warlock or Priest",
@@ -202,7 +180,7 @@
     "stated": false
    },
    "alt": "Priest (Holy/Disc)",
-   "why": "On record that warlock is the move for PvP, and also claims to be the best priest healer. Affliction is A tier in PvP. Gnome gives Escape Artist and more mana.",
+   "why": "Says warlock is the PvP move, and also that nobody heals better as a priest. Affliction plus Gnome Escape Artist.",
    "quotes": [
     {
      "t": "warlock fucks in pvp",
@@ -226,12 +204,11 @@
    "id": "hamfish",
    "name": "hamfish",
    "handle": "hamfish",
-   "alias": "Jim",
+   "alias": "",
    "core": false,
-   "battletag": "HamFish#11502",
    "profileUrl": "",
-   "usual": "Unknown for Forever",
-   "lean": "Suggestion only",
+   "usual": "Undecided",
+   "lean": "Undecided",
    "pick": {
     "cls": "hunter",
     "spec": "Beast Mastery",
@@ -239,7 +216,7 @@
     "stated": false
    },
    "alt": "Protection Paladin",
-   "why": "No Forever notes, so this is a SUGGESTION. He's played Alliance before. BM Hunter is S tier for leveling and dungeons, and good for someone who isn't on every night.",
+   "why": "Alliance veteran. BM Hunter levels fast, runs dungeons easily and forgives a missed night.",
    "quotes": [
     {
      "t": "@Ferez and i dominated horde in cata",
@@ -248,10 +225,6 @@
     {
      "t": "LF Healer BRD have summon PST",
      "d": "2020-02-04"
-    },
-    {
-     "t": "WoW really do be recycling through all the classic expansions huh",
-     "d": "2022-04-19"
     }
    ]
   },
@@ -261,10 +234,9 @@
    "handle": "Russian Orthodox",
    "alias": "Jake",
    "core": false,
-   "battletag": "Nightman#11890",
    "profileUrl": "",
-   "usual": "Unknown for Forever",
-   "lean": "Suggestion only",
+   "usual": "Undecided",
+   "lean": "Undecided",
    "pick": {
     "cls": "mage",
     "spec": "Frost",
@@ -272,20 +244,12 @@
     "stated": false
    },
    "alt": "Rogue (Subtlety)",
-   "why": "No WoW class talk in the archive, so this is a SUGGESTION. Mage is S or A on every list, the fastest leveler, and the only class that makes water and portals, which fills the comp's biggest gap.",
+   "why": "Mage: top tier everywhere, levels fastest, and brings the water and portals everyone else begs for.",
    "quotes": [
     {
      "t": "Ferez and Phactors",
      "d": "2026-09-26",
      "by": "naming the Horde voters"
-    },
-    {
-     "t": "Tech tip Thursday!! Let me throw my hat into the ring",
-     "d": "2023-01-05"
-    },
-    {
-     "t": "anyone for some comps? need a second tank main to carry",
-     "d": "2023-03-06"
     }
    ]
   }
