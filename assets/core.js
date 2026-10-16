@@ -68,20 +68,14 @@ function stamp() {
 function countdown(el) {
   const T = new Date(C.LAUNCH_UTC).getTime();
   el.innerHTML = ["Days", "Hours", "Mins", "Secs"].map(l => `<div class="cd"><b>00</b><span>${l}</span></div>`).join("");
-  const bs = $$("b", el), flip = !matchMedia("(pointer: coarse), (max-width: 899px), (prefers-reduced-motion: reduce)").matches;
-  let timer = 0, onScreen = true;
-  // ticks on the second, only while the countdown is on screen and the tab is visible
+  const bs = $$("b", el);
   const tick = () => {
-    clearTimeout(timer);
-    const s = Math.max(0, Math.floor((T - Date.now()) / 1000));
+    let s = Math.max(0, Math.floor((T - Date.now()) / 1000));
     const v = [Math.floor(s / 86400), Math.floor(s % 86400 / 3600), Math.floor(s % 3600 / 60), s % 60];
-    // alternate two identical keyframes to replay the flip without forcing a reflow
-    v.forEach((x, i) => { const t = String(x).padStart(2, "0"); if (bs[i].textContent !== t) { bs[i].textContent = t; if (flip) bs[i].className = bs[i].className === "tick" ? "tock" : "tick"; } });
-    if (s > 0 && onScreen && !document.hidden) timer = setTimeout(tick, 1000 - Date.now() % 1000 + 10);
+    v.forEach((x, i) => { const t = String(x).padStart(2, "0"); if (bs[i].textContent !== t) { bs[i].textContent = t; bs[i].classList.remove("tick"); void bs[i].offsetWidth; bs[i].classList.add("tick"); } });
+    if (s === 0) el.insertAdjacentHTML("afterend", "");
   };
-  if ("IntersectionObserver" in window) new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; tick(); }).observe(el);
-  document.addEventListener("visibilitychange", tick);
-  tick();
+  tick(); setInterval(tick, 1000);
 }
 /* ---------- helpers ---------- */
 const cls = k => BB.game.classes[k];
