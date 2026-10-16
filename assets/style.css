@@ -640,3 +640,6 @@ main#page{min-height:100vh}
  .seg{gap:6px}.seg button{font-size:14px;padding:10px 12px}.squote{padding:20px}.squote .sq{font-size:18px}.roles3{font-size:12px}.cat{font-size:11px}.howto{font-size:14px}.grid.g2{grid-template-columns:1fr}.news a{display:flex;align-items:center;min-height:44px}
  footer{padding-bottom:30px}.db-bubble{max-width:calc(100vw - 30px)}.db{bottom:82px}.db-av{width:44px;height:50px}.db-sigil .crest{width:36px;height:40px}
 }
+
+/* Wisp: bubble floats above the button so the button never moves */
+.db{display:block}.db-bubble,.db-chat{position:absolute!important;right:0;bottom:calc(100% + 8px);width:max-content;max-width:min(250px,calc(100vw - 24px))}.db-chat{width:min(360px,calc(100vw - 16px));max-width:none}

@@ -43,7 +43,8 @@ function danbot(page) {
   $(".db-x", root).onclick = () => { bub.hidden = true; st.seen[page] = Date.now(); save(); };
   $(".db-mute", root).onclick = () => { st.mute = true; bub.hidden = true; save(); toast("Tips off. Tap Wisp any time."); };
   const lines = DB_LINES[page] || DB_LINES.home;
-  if (!st.mute && Date.now() - st.last > 90e3 && Date.now() - (st.seen[page] || 0) > 6 * 36e5) {
+  // no unprompted tips on phones: they cover the content mid-scroll
+  if (!matchMedia("(max-width: 760px)").matches && !st.mute && Date.now() - st.last > 90e3 && Date.now() - (st.seen[page] || 0) > 6 * 36e5) {
     setTimeout(() => { if (!bub.hidden) return; show(lines[Math.floor(Math.random() * lines.length)], "", 9000); st.last = Date.now(); st.seen[page] = Date.now(); save(); }, 5000);
   }
 }
