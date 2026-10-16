@@ -603,11 +603,12 @@ button:disabled{cursor:not-allowed;opacity:.4}
 .vote{width:100%;text-align:left;color:var(--text)}.addrow input{min-width:0;width:0}.addrow .btn{flex-shrink:0}
 .quotes{margin-top:16px;border-top:1px solid #594221;padding-top:6px;font-size:.9rem}.quotes summary{color:var(--muted)}
 
+main#page{min-height:100vh}
 /* Characters are always WebGL models; a shimmer shows while they load. */
 .av{position:relative;isolation:isolate;min-width:0;height:240px;overflow:hidden;border:1px solid color-mix(in srgb,var(--cc) 40%,#24201a);border-radius:12px;background:radial-gradient(ellipse at 50% 65%,color-mix(in srgb,var(--cc) 15%,transparent),transparent 70%),linear-gradient(#0c0d12,#181410)}
 .av:after{content:'';position:absolute;bottom:18px;left:15%;right:15%;height:14px;border-radius:50%;box-shadow:0 0 25px color-mix(in srgb,var(--cc) 30%,transparent);border:1px solid color-mix(in srgb,var(--cc) 25%,transparent);pointer-events:none}
 .ph{position:absolute;inset:0;overflow:hidden;transition:opacity .3s}.ph:before{content:'';position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,color-mix(in srgb,var(--cc) 14%,transparent) 50%,transparent 70%);background-size:250% 100%;animation:avsh 1.6s linear infinite}@keyframes avsh{from{background-position:130% 0}to{background-position:-130% 0}}@media(prefers-reduced-motion:reduce){.ph:before{animation:none}}
-.av.live .ph{opacity:0}.av .m3d{position:absolute;inset:0;width:100%;height:100%;opacity:0}.av.live .m3d{opacity:1}.av canvas{display:block;width:100%!important;height:100%!important}
+.av .m3d-still{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}.av.live .m3d-still{display:none}.av.still .ph{opacity:0}.av.live .ph{opacity:0}.av .m3d{position:absolute;inset:0;width:100%;height:100%;opacity:0}.av.live .m3d{opacity:1}.av canvas{display:block;width:100%!important;height:100%!important}
 .av.sm{height:150px}.av.md{height:180px}.av.lg{height:300px}
 .rcard .rtop{grid-template-columns:180px minmax(0,1fr)}.rcard .av{height:280px}.rinfo{min-width:0}.rcard .why{font-size:1rem;line-height:1.4}.rcard .btn{display:inline-flex;align-items:center;margin-top:12px;min-height:44px;text-decoration:none}
 .tiers2{display:flex;align-items:center;gap:6px;flex-wrap:wrap}

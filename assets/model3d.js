@@ -1,7 +1,8 @@
 /* BBCC 3D characters (Wowhead ZamModelViewer via wow-model-viewer, ISC), loaded through BBCC_CONFIG.MODEL_PROXY.
    Every .av[data-cls] avatar is always a 3D model: it shows a loading shimmer until the model is up, and a failed
-   load is retried (never a drawing). Visible avatars load lazily from a queue; avatars far offscreen are torn down
-   so only a few WebGL viewers run at once, and rebuild when scrolled back. */
+   load is retried (never a drawing). Avatars load lazily as they near the screen and then STAY loaded; offscreen
+   viewers stop rendering (frozen on their last frame). Only past the WebGL context cap is the farthest offscreen
+   viewer released, and it leaves a still image of its own 3D render in place until it is rebuilt. */
 window.M3D = (() => {
   const C = window.BBCC_CONFIG || {}, BASE = (C.MODEL_PROXY || "").replace(/\/$/, "");
   const RACE_ID = { "Human": 1, "Orc": 2, "Dwarf": 3, "Night Elf": 4, "Undead": 5, "Tauren": 6, "Gnome": 7, "Troll": 8 };
@@ -9,7 +10,7 @@ window.M3D = (() => {
   const GEAR = {"warrior": [[9, 33982], [5, 33983], [10, 33984], [1, 34215], [7, 33986], [3, 34253], [8, 33989], [6, 33990], [21, 30606], [22, 31852]], "priest": [[6, 34053], [9, 34052], [8, 34055], [1, 34233], [10, 34051], [7, 34049], [3, 34048], [21, 675577], [20, 34047]], "paladin": [[6, 33633], [9, 33634], [5, 33635], [1, 45888], [10, 33636], [7, 33637], [8, 33639], [3, 33680], [21, 675214], [22, 29702]], "druid": [[6, 30541], [8, 30542], [9, 30548], [5, 30536], [1, 178176], [10, 34016], [7, 30540], [3, 30546], [21, 32162]], "warlock": [[6, 34011], [8, 674855], [9, 34012], [10, 34013], [7, 7939], [1, 34369], [3, 34022], [21, 184656], [20, 674853]], "rogue": [[6, 31110], [8, 31111], [9, 31127], [5, 33650], [10, 32815], [1, 33743], [7, 31115], [3, 32813], [21, 33615], [22, 22366]], "mage": [[6, 34046], [9, 34045], [8, 34044], [1, 188836], [3, 34058], [10, 34041], [7, 34039], [5, 34038], [21, 31960]], "hunter": [[6, 33665], [9, 33666], [5, 33667], [10, 33668], [8, 34269], [1, 34367], [7, 33672], [3, 34091], [21, 682296], [26, 733457]], "shaman": [[6, 34078], [9, 34079], [5, 34081], [3, 34067], [10, 34082], [8, 34083], [1, 34217], [7, 34084], [21, 675214], [22, 29702]]};
   const LOOK = { 1: { skin: 2, face: 1, hairStyle: 3, hairColor: 2, facialStyle: 2 }, 3: { skin: 2, face: 1, hairStyle: 3, hairColor: 2, facialStyle: 4 }, 4: { skin: 2, face: 1, hairStyle: 2, hairColor: 3, facialStyle: 1 }, 7: { skin: 1, face: 1, hairStyle: 2, hairColor: 4, facialStyle: 1 } };
   const small = () => matchMedia("(max-width: 760px)").matches;
-  const MAX_LIVE = () => small() ? 6 : 10;
+  const MAX_LIVE = () => small() ? 8 : 14; // stay under browser WebGL context limits
   const PAR = () => small() ? 1 : 2; // concurrent loads
   let libP = null, busy = 0;
   const dead = false;
@@ -37,8 +38,10 @@ window.M3D = (() => {
 
   function teardown(el) {
     const s = el._m3d; if (!s) return; el._m3d = null; live.delete(el);
+    // leave a still of this model's own 3D render in place, so a released viewer never blanks or re-shimmers
+    if (s.still) { let img = el.querySelector(".m3d-still"); if (!img) { img = document.createElement("img"); img.className = "m3d-still"; img.alt = ""; img.decoding = "async"; el.append(img); } img.src = s.still; }
     try { s.viewer && s.viewer.renderer && s.viewer.renderer.destroy(); } catch (e) {}
-    s.box.remove(); el.classList.remove("live", "loading", "no3d");
+    s.box.remove(); el.classList.remove("live", "loading", "no3d"); if (el.querySelector(".m3d-still")) el.classList.add("still");
   }
   function sweep() { live.forEach(el => { if (!el.isConnected) teardown(el); }); for (let i = queue.length; i--;) if (!queue[i].isConnected) queue.splice(i, 1); }
 
@@ -50,9 +53,10 @@ window.M3D = (() => {
     const next = queue.find(el => el._vis);
     if (!next) return;
     if (live.size >= MAX_LIVE()) {
-      const idle = [...live].find(el => !el._vis);
-      if (!idle) return;
-      teardown(idle);
+      // release the offscreen viewer farthest from the viewport
+      const mid = innerHeight / 2, far = [...live].filter(el => !el._vis && !el.classList.contains("loading")).sort((a, b) => Math.abs(b.getBoundingClientRect().top - mid) - Math.abs(a.getBoundingClientRect().top - mid))[0];
+      if (!far) return;
+      teardown(far); if (far.querySelector(".m3d-still")) far.classList.add("still");
     }
     queue.splice(queue.indexOf(next), 1);
     busy++; pump();
@@ -75,31 +79,37 @@ window.M3D = (() => {
       const v = await timeout(generateModels(0.75, "#" + id, ch), 20000, "model");
       if (el._m3d !== me) { try { v.renderer.destroy(); } catch (e) {} return; }
       me.viewer = v;
+      // render only while on screen; when it scrolls away draw one last frame, keep a still of it, then freeze
+      const Rr = v.renderer, draw = Rr.draw;
+      Rr.draw = function (t) {
+        if (me.paused && !me.snap) return;
+        draw.call(this, t);
+        if (me.snap) { me.snap = false; try { const c = Rr.canvas && (Rr.canvas[0] || Rr.canvas); const u = c.toDataURL("image/webp", 0.82); if (u.length > 3000) me.still = u; } catch (e) {} }
+      };
+      const cv = box.querySelector("canvas");
+      cv && cv.addEventListener("webglcontextlost", ev => { ev.preventDefault(); if (el._m3d !== me) return; console.warn("3D context lost; rebuilding"); teardown(el); setTimeout(() => el.isConnected && want(el), 1000); });
       const t0 = Date.now();
       await new Promise((res, rej) => { const t = setInterval(() => { const R = v.renderer; if (el._m3d !== me) { clearInterval(t); res(); } else if (R && R.actors && R.actors[0] && R.distance) { clearInterval(t); res(); } else if (Date.now() - t0 > 25000) { clearInterval(t); rej(new Error("model timeout")); } }, 150); });
       if (el._m3d !== me) return;
       // pull the camera back a touch so helmets and shoulders never clip
       setTimeout(() => { try { if (el._m3d === me) { v.renderer.distance *= 1.45; v.setZenith && v.setZenith(Math.PI / 2 + 0.06); } } catch (e) {} }, 900);
-      el._try = 0; el.classList.remove("loading"); el.classList.add("live");
-      if (el._vis === false) setTimeout(() => { if (!el._vis && el._m3d === me && live.size > 1) teardown(el); }, 4000);
+      el._try = 0; el.classList.remove("loading", "still"); el.classList.add("live");
+      if (el._vis === false) { me.snap = true; me.paused = true; }
     } catch (e) {
       console.warn("3D model unavailable:", e.message);
       teardown(el);
       if (stage === "lib") libP = null;
       // retry with backoff; the shimmer stays up meanwhile
       el._try = (el._try || 0) + 1;
-      clearTimeout(el._retry); el._retry = setTimeout(() => { if (el.isConnected) want(el); }, Math.min(30000, 1500 * 2 ** Math.min(el._try, 5)));
+      clearTimeout(el._retry); el._retry = setTimeout(() => { if (el.isConnected && el._vis !== false) want(el); }, Math.min(30000, 1500 * 2 ** Math.min(el._try, 5)));
     }
   }
 
   const io = "IntersectionObserver" in window ? new IntersectionObserver(es => es.forEach(e => {
     const el = e.target; el._vis = e.isIntersecting;
+    const m = el._m3d; if (m) { if (!e.isIntersecting && !m.paused && m.viewer) m.snap = true; m.paused = !e.isIntersecting; } // freeze offscreen
     if (e.isIntersecting) want(el);
-    else {
-      const i = queue.indexOf(el); if (i > -1) queue.splice(i, 1);
-      // pause offscreen: tear down after a grace period so quick scroll-bys don't thrash
-      clearTimeout(el._off); el._off = setTimeout(() => { if (!el._vis && el._m3d && !el.classList.contains("loading")) teardown(el); }, small() ? 1500 : 6000);
-    }
+    else { const i = queue.indexOf(el); if (i > -1) queue.splice(i, 1); }
   }), { rootMargin: "300px 0px" }) : null;
 
   function observe(root = document) {
@@ -114,6 +124,7 @@ window.M3D = (() => {
   function refresh(el) {
     if (el._m3d && el._m3d.sig === sig(el)) return;
     teardown(el);
+    const st = el.querySelector(".m3d-still"); if (st) st.remove(); el.classList.remove("still");
     if (!supports(el)) return;
     if (!io) { el._vis = true; want(el); return; }
     if (!el._obs) { el._obs = 1; io.observe(el); return; }
