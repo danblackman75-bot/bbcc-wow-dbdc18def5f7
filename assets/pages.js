@@ -42,7 +42,7 @@ P.home = r => {
 };
 
 P.roster = r => {
-  r.innerHTML = `<section class="wrap"><h2 class="sec">The Roster</h2><p class="sub">Real quotes from the crew chat. Picks marked <b>stated</b> came from the person; everything else is a suggestion. BattleTags go in <code>data/members.json</code>.</p>
+  r.innerHTML = `<section class="wrap"><h2 class="sec">The Roster</h2>
   <div class="grid g2">${BB.members.members.map(m => { const c = cls(m.pick.cls); return `
    <article id="${m.id}" class="panel rcard reveal ${m.core ? "core" : ""}" style="--cc:${c.color}">
     ${m.core ? '<span class="corebadge tag">★ CORE 4</span>' : ""}

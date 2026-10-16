@@ -22,7 +22,7 @@ const DB_LINES = {
   meta: ["Tier lists are from a level-30 beta. Calm down, theorycrafters.", "Fury Warrior tops the raid sim. Rage fixes pending."],
   racials: ["Night Elves get Shadowmeld. I'm not hiding. I'm just mysterious.", "Orc Blood Fury now buffs spell power too. Rude, honestly."],
   news: ["Fresh scrolls from Azeroth, refreshed hourly.", "Click a video. I'll wait. Elegantly."],
-  streamers: ["Asmon went Alliance PvP. We could… not.", "Real quotes only. I have standards."],
+  streamers: ["Asmon went Alliance PvP. We could… not.", "Pick a side, coward."],
   guild: ["<Sam Squatch> has big-foot energy. Just saying.", "Vote with your heart. Then screenshot it to Discord."]
 };
 const DB_MENU = [

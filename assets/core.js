@@ -28,7 +28,7 @@ function shell(pageFile) {
   const bn = [["index.html", "Home", "🏰"], ["warroom.html", "Comp", "⚔️"], ["roster.html", "Roster", "🛡️"], ["news.html", "News", "📜"]];
   document.body.insertAdjacentHTML("beforeend", `
   <footer><div class="crewbig">${esc(C.CREW_NAME)}</div>
-  <p>Fan-made war room for the ${esc(C.CREW_SHORT)} Discord crew. Data comes from public sources (Blizzard, Wowhead, tier-list sites, creators' public posts) and from our own crew chat (real quotes). Tier lists come from the level-30 beta and will change after launch. Not affiliated with Blizzard Entertainment. World of Warcraft® is a trademark of Blizzard. All art on this site is original.</p>
+  <p>Fan-made for the ${esc(C.CREW_SHORT)} crew. Not affiliated with Blizzard.</p>
   <p class="small">Live data updated: <b id="liveStamp">…</b> · Site build ${esc(C.UPDATED)}</p></footer>
   <nav class="bottomnav">${bn.map(([f, n, i]) => `<a href="${f}" class="${f === pageFile ? "on" : ""}"><span>${i}</span>${n}</a>`).join("")}<button class="more"><span>☰</span>More</button></nav>`);
   const links = $("nav.links"), bur = $(".burger");
