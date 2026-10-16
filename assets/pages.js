@@ -64,7 +64,7 @@ P.pvepvp = r => {
     <p><b>Pros for us</b></p><ul><li>Plays to the crew's history: tanking, healing, dungeon nights since Classic 2019.</li><li>A 5-person core maps perfectly to dungeons. Raids open Dec 9.</li><li>Holy Paladin, Prot Paladin and Fury Warrior are top-tier PvE picks, which fits Donnie, Chilly and Harry.</li><li>Nobody gets ganked while leveling on a work night.</li></ul>
     <p><b>Cons</b></p><ul><li>Raiding needs 10–40 people, so we'd have to join a bigger guild.</li><li>Schedules: someone always has to be the healer.</li></ul></div>
    <div class="panel reveal"><h3>⚔️ PvP focus (BGs + world PvP)</h3>
-    <p><b>Pros for us</b></p><ul><li>Warlock (bns, lmk), Priest (Harry) and Feral (Dan) are all A/S tier in PvP.</li><li>New 15v15 Darkspear Islands BG, plus WSG, AB and AV.</li><li>Pure chaos energy, very ${esc(C.CREW_SHORT)}.</li></ul>
+    <p><b>Pros for us</b></p><ul><li>Warlock (bns, lmk), Priest (Harry) and Feral (dbx) are all A/S tier in PvP.</li><li>New 15v15 Darkspear Islands BG, plus WSG, AB and AV.</li><li>Pure chaos energy, very ${esc(C.CREW_SHORT)}.</li></ul>
     <p><b>Cons</b></p><ul><li>Chilly on modern PvP: <i>“World of stun craft.”</i></li><li>The PvP ruleset locks you to one faction, and Olympus (30k+) lives on Alliance PvP.</li><li>No arenas announced, and BG data only arrives after launch.</li></ul></div>
   </div>
   <h2 class="sec">Ruleset Recommendation</h2>
