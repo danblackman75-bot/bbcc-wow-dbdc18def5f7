@@ -107,7 +107,7 @@ function draw() {
     const m = BB.M[id], p = S.picks[id], C = cls(p.cls), sp = C.specs[p.spec];
     return `<details class="mrow" data-id="${id}" style="--cc:${C.color}" ${open.size ? (open.has(id) ? "open" : "") : (i === 0 ? "open" : "")}>
       <summary><span class="ico">${C.icon}</span><span><b>${esc(m.name)}</b>${m.core ? ' <span class="tag">core</span>' : ""}<br><span class="cls" style="color:${C.color}">${esc(p.spec)} ${esc(C.name)}</span> <span class="small">· ${esc(p.race)}</span></span><span class="tiers">${tier(sp.pve)}<small>PvE</small>${tier(sp.pvp)}<small>PvP</small></span></summary>
-      <div class="mbody">${figure(p.cls, p.race, true)}
+      <div class="mbody">${figure(p.cls, p.race, true, false, id)}
        <div class="ctrls">
         <label>Class<select data-k="cls">${Object.entries(BB.game.classes).filter(([k]) => racesFor(k).length).map(([k, c]) => `<option value="${k}" ${k === p.cls ? "selected" : ""}>${c.icon} ${c.name}</option>`).join("")}</select></label>
         <label>Spec<select data-k="spec">${Object.entries(C.specs).map(([s, d]) => `<option ${s === p.spec ? "selected" : ""} value="${s}">${s} (${d.role}) · ${d.pve}/${d.pvp}</option>`).join("")}</select></label>

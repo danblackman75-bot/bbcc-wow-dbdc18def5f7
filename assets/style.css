@@ -184,3 +184,14 @@ details.mrow .tiers{display:grid;grid-template-columns:auto auto;gap:2px 6px;ali
 @media(max-width:560px){.stats{grid-template-columns:1fr 1fr!important;gap:10px}.stat b{font-size:1.8rem}.radarbox{max-width:100%}}
 .db-choices{display:grid;gap:6px;margin-top:8px}.db-choices button{text-align:left;background:#2b2142;border:1px solid #5b4d99;color:#f1ecff;border-radius:10px;padding:9px 10px;min-height:42px;font-size:.92rem;cursor:pointer}.db-choices button:hover{border-color:#b6a8ff}
 .db-choices .btn{text-decoration:none;text-align:center}.db-bubble{max-width:270px}
+
+/* 3D viewer (optional) */
+.figwrap{position:relative}
+.b3d{position:absolute;top:6px;right:6px;z-index:3;font:700 12px Cinzel,serif;color:#1a120a;background:linear-gradient(#fff2bf,#d9a441);border:1px solid #7a5418;border-radius:999px;padding:4px 10px;cursor:pointer;box-shadow:0 2px 8px #0008}
+.figwrap.is3d .fig{display:none}
+.m3d{width:100%;max-width:340px;aspect-ratio:3/4;margin:0 auto;border-radius:12px;background:radial-gradient(circle at 50% 40%,color-mix(in srgb,var(--cc,#e7c26b) 30%,transparent),transparent 70%);touch-action:none;position:relative;overflow:hidden}
+.fig.sm+.b3d+.m3d,.fig.sm~.m3d{max-width:240px}
+.m3d canvas{width:100%!important;height:100%!important}
+.m3d-spin{position:absolute;inset:0;display:grid;place-items:center;font:600 13px Cinzel,serif;color:#e7c26b;animation:pulse 1.2s infinite alternate}
+@keyframes pulse{from{opacity:.4}to{opacity:1}}
+@media(min-width:560px){.rtop:has(.is3d){grid-template-columns:260px 1fr}}

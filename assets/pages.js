@@ -46,7 +46,7 @@ P.roster = r => {
   <div class="grid g2">${BB.members.members.map(m => { const c = cls(m.pick.cls); return `
    <article id="${m.id}" class="panel rcard reveal ${m.core ? "core" : ""}" style="--cc:${c.color}">
     ${m.core ? '<span class="corebadge tag">★ CORE 4</span>' : ""}
-    <div class="rtop">${figure(m.pick.cls, m.pick.race)}
+    <div class="rtop">${figure(m.pick.cls, m.pick.race, false, false, m.id)}
      <div><h3>${memberName(m)}</h3><div class="h">${esc(m.handle)} · aka ${esc(m.alias)}</div>
      <div class="pickline">${c.icon} ${esc(m.pick.spec)} ${c.name} · ${esc(m.pick.race)}</div>
      <div>${tier(c.specs[m.pick.spec].pve)} <span class="small">PvE</span> ${tier(c.specs[m.pick.spec].pvp)} <span class="small">PvP</span> <span class="tag">${m.pick.stated ? "STATED" : "SUGGESTION"}</span></div>

@@ -109,11 +109,12 @@ function figureSVG(clsKey, race, back = false) {
   <ellipse cx="100" cy="238" rx="60" ry="9" fill="#000" opacity=".5"/><circle cx="100" cy="130" r="100" fill="url(#g${uid})"/>
   <g transform="translate(100 240) scale(${w} ${L.h}) translate(-100 -240)">${wings}${back ? "" : weap}${torso}${arms}${pauld}${horns}${ears}<ellipse cx="100" cy="76" rx="22" ry="24" fill="${L.skin}"/>${face}${tusks}${beard}${helm}${back ? weap : ""}</g></svg>`;
 }
-function figure(clsKey, race, small, nocap) {
+function figure(clsKey, race, small, nocap, key = "") {
   const c = cls(clsKey)?.color || "#888";
-  return `<div class="figwrap"><div class="fig ${small ? "sm" : ""}" style="--cc:${c}" data-rot="0" tabindex="0" aria-label="Drag to rotate"><div class="face">${figureSVG(clsKey, race)}</div><div class="face back">${figureSVG(clsKey, race, true)}</div></div>${nocap ? "" : `<div class="small figcap">↔ drag to rotate · <a href="https://www.wowhead.com/classic/dressing-room" target="_blank" rel="noopener">Wowhead Dressing Room ↗</a></div>`}</div>`;
+  return `<div class="figwrap" data-cls="${esc(clsKey)}" data-race="${esc(race)}" data-key="${esc(key)}" data-gender="${key && BB.M && BB.M[key] && BB.M[key].gender === "female" ? 1 : 0}"><div class="fig ${small ? "sm" : ""}" style="--cc:${c}" data-rot="0" tabindex="0" aria-label="Drag to rotate"><div class="face">${figureSVG(clsKey, race)}</div><div class="face back">${figureSVG(clsKey, race, true)}</div></div>${nocap ? "" : `<div class="small figcap">↔ drag to rotate · <a href="https://www.wowhead.com/classic/dressing-room" target="_blank" rel="noopener">Wowhead Dressing Room ↗</a></div>`}</div>`;
 }
 function bindFigures(root = document) {
+  if (window.M3D) setTimeout(() => M3D.bind(root), 0);
   $$(".fig", root).forEach(f => {
     if (f._b) return; f._b = 1; let x0 = null, r = 0, auto = true;
     const set = () => f.style.transform = `rotateY(${r}deg)`;
