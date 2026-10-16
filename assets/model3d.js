@@ -9,6 +9,9 @@ window.M3D = (() => {
   // [viewer slot, retail ItemDisplayInfoID]; vanilla T2 (T1 Bloodfang/Netherwind/Dragonstalker/Ten Storms = T2 sets of those classes) + BWL/MC weapons
   const GEAR = {"warrior": [[9, 33982], [5, 33983], [10, 33984], [1, 34215], [7, 33986], [3, 34253], [8, 33989], [6, 33990], [21, 30606], [22, 31852]], "priest": [[6, 34053], [9, 34052], [8, 34055], [1, 34233], [10, 34051], [7, 34049], [3, 34048], [21, 675577], [20, 34047]], "paladin": [[6, 33633], [9, 33634], [5, 33635], [1, 45888], [10, 33636], [7, 33637], [8, 33639], [3, 33680], [21, 675214], [22, 29702]], "druid": [[6, 30541], [8, 30542], [9, 30548], [5, 30536], [1, 178176], [10, 34016], [7, 30540], [3, 30546], [21, 32162]], "warlock": [[6, 34011], [8, 674855], [9, 34012], [10, 34013], [7, 7939], [1, 34369], [3, 34022], [21, 184656], [20, 674853]], "rogue": [[6, 31110], [8, 31111], [9, 31127], [5, 33650], [10, 32815], [1, 33743], [7, 31115], [3, 32813], [21, 33615], [22, 22366]], "mage": [[6, 34046], [9, 34045], [8, 34044], [1, 188836], [3, 34058], [10, 34041], [7, 34039], [5, 34038], [21, 31960]], "hunter": [[6, 33665], [9, 33666], [5, 33667], [10, 33668], [8, 34269], [1, 34367], [7, 33672], [3, 34091], [21, 682296], [26, 733457]], "shaman": [[6, 34078], [9, 34079], [5, 34081], [3, 34067], [10, 34082], [8, 34083], [1, 34217], [7, 34084], [21, 675214], [22, 29702]]};
   const LOOK = { 1: { skin: 2, face: 1, hairStyle: 3, hairColor: 2, facialStyle: 2 }, 3: { skin: 2, face: 1, hairStyle: 3, hairColor: 2, facialStyle: 4 }, 4: { skin: 2, face: 1, hairStyle: 2, hairColor: 3, facialStyle: 1 }, 7: { skin: 1, face: 1, hairStyle: 2, hairColor: 4, facialStyle: 1 } };
+  // camera framing per race: [distance multiplier, vertical aim offset as a fraction of distance]
+  const FRAME = { 1: [1.05, 0], 2: [1.05, 0], 3: [1.05, 0], 4: [1.05, 0], 5: [1.05, 0], 6: [1.05, 0], 7: [1.05, 0], 8: [1.05, 0] };
+  const FRAME_K = (window.BBCC_FRAME_K || 1);
   const small = () => matchMedia("(max-width: 760px)").matches;
   const MAX_LIVE = () => small() ? 8 : 14; // stay under browser WebGL context limits
   const PAR = () => small() ? 1 : 2; // concurrent loads
@@ -76,23 +79,28 @@ window.M3D = (() => {
       if (el._m3d !== me) return;
       const r = RACE_ID[el.dataset.race];
       const ch = { race: r, gender: +(el.dataset.gender || 0), ...(LOOK[r] || { skin: 1, face: 1, hairStyle: 1, hairColor: 1, facialStyle: 1 }), items: GEAR[el.dataset.cls] };
-      const v = await timeout(generateModels(0.75, "#" + id, ch), 20000, "model");
+      // canvas matches the container's own fixed px box exactly, so nothing stretches or resizes later
+      const asp = el.clientWidth && el.clientHeight ? el.clientWidth / el.clientHeight : 0.75;
+      const v = await timeout(generateModels(asp, "#" + id, ch), 20000, "model");
       if (el._m3d !== me) { try { v.renderer.destroy(); } catch (e) {} return; }
       me.viewer = v;
       // render only while on screen; when it scrolls away draw one last frame, keep a still of it, then freeze
       const Rr = v.renderer, draw = Rr.draw;
+      const fr = FRAME[r] || [1, 0];
+      me.fit = 0;
       Rr.draw = function (t) {
-        if (me.paused && !me.snap) return;
+        const refit = Rr.doUpdateBounds;
+        if (me.paused && !me.snap && !refit) return;
         draw.call(this, t);
+        // the viewer re-fits its camera whenever bounds change; re-apply our framing in the same frame so it never jumps
+        if (refit && !Rr.doUpdateBounds) { try { Rr.distance *= fr[0] * FRAME_K * (window.BBCC_FRAME_X || 1); Rr.zenith = Math.PI / 2; if (fr[1]) Rr.target[2] += fr[1] * Rr.distance; Rr.updateCamera(); } catch (e) {} me.fit = Date.now(); }
         if (me.snap) { me.snap = false; try { const c = Rr.canvas && (Rr.canvas[0] || Rr.canvas); const u = c.toDataURL("image/webp", 0.82); if (u.length > 3000) me.still = u; } catch (e) {} }
       };
       const cv = box.querySelector("canvas");
       cv && cv.addEventListener("webglcontextlost", ev => { ev.preventDefault(); if (el._m3d !== me) return; console.warn("3D context lost; rebuilding"); teardown(el); setTimeout(() => el.isConnected && want(el), 1000); });
       const t0 = Date.now();
-      await new Promise((res, rej) => { const t = setInterval(() => { const R = v.renderer; if (el._m3d !== me) { clearInterval(t); res(); } else if (R && R.actors && R.actors[0] && R.distance) { clearInterval(t); res(); } else if (Date.now() - t0 > 25000) { clearInterval(t); rej(new Error("model timeout")); } }, 150); });
+      await new Promise((res, rej) => { const t = setInterval(() => { const R = v.renderer; if (el._m3d !== me) { clearInterval(t); res(); } else if (R && R.actors && R.actors[0] && R.distance && me.fit && Date.now() - me.fit > 700) { clearInterval(t); res(); } else if (Date.now() - t0 > 25000) { clearInterval(t); rej(new Error("model timeout")); } }, 150); });
       if (el._m3d !== me) return;
-      // pull the camera back a touch so helmets and shoulders never clip
-      setTimeout(() => { try { if (el._m3d === me) { v.renderer.distance *= 1.45; v.setZenith && v.setZenith(Math.PI / 2 + 0.06); } } catch (e) {} }, 900);
       el._try = 0; el.classList.remove("loading", "still"); el.classList.add("live");
       if (el._vis === false) { me.snap = true; me.paused = true; }
     } catch (e) {

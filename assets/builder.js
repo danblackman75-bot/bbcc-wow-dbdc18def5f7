@@ -243,17 +243,28 @@ function drawEditor() {
   else setAvatar(cur, p.cls, p.race, m.name);
   const races = Object.keys(BB.game.races[S.faction]), legal = racesFor(p.cls);
   const tA = topRace(p.cls, S.faction, false), tP = topRace(p.cls, S.faction, true);
-  $(".ed-ctrl", ed).innerHTML = `
+  const ctrl = $(".ed-ctrl", ed), html = `
    <div class="ed-head"><h3>${esc(m.name)}</h3><span class="tag">${m.pick.stated ? "Locked in" : "Our guess"}</span><span class="small">${esc(m.lean)}</span></div>
    <div class="opt"><span class="lbl">Class</span><div class="cgrid">${Object.entries(BB.game.classes).filter(([k]) => racesFor(k).length).map(([k, c]) => `<button class="cbtn ${k === p.cls ? "on" : ""}" data-v="${k}" style="--cc:${c.color}" aria-pressed="${k === p.cls}"><span aria-hidden="true">${c.icon}</span><small>${c.name}</small></button>`).join("")}</div></div>
    <div class="opt"><span class="lbl">Spec</span><div class="sgrid">${Object.entries(C.specs).map(([s, d]) => `<button class="sbtn ${s === p.spec ? "on" : ""}" data-v="${esc(s)}" aria-pressed="${s === p.spec}"><b>${esc(s)}</b><small>${ROLE_ICO[d.role]} ${ROLE_NAME[d.role]}</small><span class="st">${tier(d.pve)}<i>PvE</i>${tier(d.pvp)}<i>PvP</i></span></button>`).join("")}</div></div>
    <div class="opt"><span class="lbl">Race <small>${S.faction}</small></span><div class="rgrid">${races.map(r => { const ok = legal.includes(r), y = RACE_SYN[r], star = ok && (tA.includes(r) || tP.includes(r)); return `<button class="rbtn ${r === p.race ? "on" : ""}" data-v="${esc(r)}" ${ok ? "" : `disabled title="${esc(r)} can't be a ${esc(C.name)}"`} aria-pressed="${r === p.race}"><b>${esc(r.replace(" Skyborne", " Sky."))}${star ? ' <span class="star" title="Top race for this class">★</span>' : ""}</b><small>${ok ? esc(y[2] + " · " + y[3]) : "Not a " + esc(C.name)}</small></button>`; }).join("")}</div></div>
    <div class="opt"><span class="lbl">Playtime</span><div class="seg play" role="group" aria-label="Playtime">${PLAY.map(([n], i) => `<button data-v="${i}" class="${i === p.play ? "on" : ""}" aria-pressed="${i === p.play}">${n}</button>`).join("")}</div></div>`;
-  const set = (k, v) => { const pk = S.picks[id]; pk[k] = v; if (k === "cls") { pk.spec = ""; const msg = fixPick(pk); if (msg) toast(msg); } draw(); };
-  $$(".cbtn", ed).forEach(b => b.onclick = () => b.dataset.v !== p.cls && set("cls", b.dataset.v));
-  $$(".sbtn", ed).forEach(b => b.onclick = () => set("spec", b.dataset.v));
-  $$(".rbtn", ed).forEach(b => b.onclick = () => set("race", b.dataset.v));
-  $$(".play button", ed).forEach(b => b.onclick = () => set("play", +b.dataset.v));
+  // patch only what changed, so the button under your finger is never destroyed and rebuilt mid-tap
+  const tmp = document.createElement("div"); tmp.innerHTML = html;
+  const nu = [...tmp.children], old = [...ctrl.children];
+  if (old.length !== nu.length || ctrl.querySelector(".ed-none")) ctrl.replaceChildren(...nu);
+  else nu.forEach((n, i) => { const o = old[i]; if (o.outerHTML === n.outerHTML) return;
+    const ob = o.querySelectorAll("button"), nb = n.querySelectorAll("button");
+    if (ob.length === nb.length && ob.length) { ob.forEach((b, j) => { const c = nb[j]; if (b.outerHTML === c.outerHTML) return; b.className = c.className; b.innerHTML !== c.innerHTML && (b.innerHTML = c.innerHTML); ["aria-pressed", "style", "disabled", "title", "data-v", "aria-label"].forEach(a => c.hasAttribute(a) ? b.getAttribute(a) !== c.getAttribute(a) && b.setAttribute(a, c.getAttribute(a)) : b.removeAttribute(a)); });
+      const ol = o.querySelector(".lbl"), nl = n.querySelector(".lbl"); if (ol && nl && ol.innerHTML !== nl.innerHTML) ol.innerHTML = nl.innerHTML;
+    } else o.replaceWith(n); });
+  ed._id = id;
+  if (!ed._bound) { ed._bound = 1; ed.addEventListener("click", e => {
+    const b = e.target.closest(".ed-ctrl button[data-v]"); if (!b || b.disabled) return;
+    const id = ed._id, pk = S.picks[id], v = b.dataset.v;
+    const set = (k, v) => { if (pk[k] === v) return; pk[k] = v; if (k === "cls") { pk.spec = ""; const msg = fixPick(pk); if (msg) toast(msg); } draw(); };
+    if (b.classList.contains("cbtn")) set("cls", v); else if (b.classList.contains("sbtn")) set("spec", v); else if (b.classList.contains("rbtn")) set("race", v); else if (b.closest(".play")) set("play", +v);
+  }); }
 }
 function drawResult() {
   const A = analyze(), res = $("#result");
