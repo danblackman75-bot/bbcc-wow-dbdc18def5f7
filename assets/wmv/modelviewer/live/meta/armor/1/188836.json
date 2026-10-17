@@ -1,0 +1,629 @@
+{
+  "Model": 0,
+  "Textures": {
+    "2": 141999
+  },
+  "Textures2": null,
+  "TextureFiles": null,
+  "ModelFiles": {
+    "17289": [
+      {
+        "FileDataId": 141974,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 10,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141975,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 10,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141976,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 11,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141977,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 11,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141978,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 3,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141979,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 3,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141980,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 7,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141981,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 7,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141982,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 9,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141983,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 9,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141984,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 1,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141985,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 1,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141986,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 4,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141987,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 4,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141988,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 2,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141989,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 2,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141990,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 5,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141991,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 5,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141992,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 6,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141993,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 6,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141994,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 8,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 141995,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 8,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 445519,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 22,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 454517,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 22,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 612996,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 24,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 612998,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 24,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 1847114,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 31,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 2742236,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 32,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 2742237,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 32,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 3167739,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 35,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 3167740,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 35,
+        "ExtraData": -1
+      }
+    ]
+  },
+  "Item": {
+    "Flags": 0,
+    "InventoryType": 1,
+    "ItemClass": 4,
+    "ItemSubClass": 1,
+    "HideGeosetMale": [
+      {
+        "RaceId": 1,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 5,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 9,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 10,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 12,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 13,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 14,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 15,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 16,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 17,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 18,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 19,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 20,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 21,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 22,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 23,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 31,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 33,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 34,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 35,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 8,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      }
+    ],
+    "HideGeosetFemale": [
+      {
+        "RaceId": 1,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 5,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 9,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 10,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 12,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 13,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 14,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 15,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 16,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 17,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 18,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 19,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 20,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 21,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 22,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 23,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 31,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 33,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 34,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 35,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 8,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      }
+    ],
+    "GeosetGroup": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "AttachGeosetGroup": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "GeosetGroupOverride": 0,
+    "ItemVisual": 0,
+    "ParticleColor": null
+  },
+  "Creature": null,
+  "Character": null,
+  "ItemEffects": null,
+  "Equipment": null,
+  "ComponentTextures": null,
+  "ComponentModels": {
+    "0": 17289
+  },
+  "StateKits": null,
+  "Decor": null,
+  "Scale": 1
+}

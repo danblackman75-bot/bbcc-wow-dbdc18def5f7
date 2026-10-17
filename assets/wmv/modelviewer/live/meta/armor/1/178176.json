@@ -1,0 +1,1714 @@
+{
+  "Model": 0,
+  "Textures": {
+    "2": 138719
+  },
+  "Textures2": null,
+  "TextureFiles": null,
+  "ModelFiles": {
+    "17307": [
+      {
+        "FileDataId": 138720,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 10,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138721,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 10,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138722,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 11,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138723,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 11,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138724,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 3,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138725,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 3,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138726,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 7,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138727,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 7,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138728,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 9,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138729,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 9,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138730,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 1,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138731,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 1,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138732,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 4,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138733,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 4,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138734,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 2,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138735,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 2,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138736,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 5,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138737,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 5,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138738,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 6,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138739,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 6,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138740,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 8,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 138741,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 8,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 438764,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 22,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 454147,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 22,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 611611,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 24,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 611613,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 24,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 1889106,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 31,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 2741968,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 32,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 2741969,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 32,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 3167471,
+        "Gender": 0,
+        "Class": 0,
+        "Race": 35,
+        "ExtraData": -1
+      },
+      {
+        "FileDataId": 3167472,
+        "Gender": 1,
+        "Class": 0,
+        "Race": 35,
+        "ExtraData": -1
+      }
+    ]
+  },
+  "Item": {
+    "Flags": 0,
+    "InventoryType": 1,
+    "ItemClass": 4,
+    "ItemSubClass": 2,
+    "HideGeosetMale": [
+      {
+        "RaceId": 1,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 4,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 5,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 8,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 9,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 10,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 12,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 13,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 14,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 15,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 16,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 17,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 18,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 19,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 20,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 21,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 22,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 23,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 31,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 33,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 34,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 35,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 2,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 22,
+        "GeosetGroup": 2,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 3,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 3,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 1,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 5,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 12,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 13,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 14,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 15,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 16,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 17,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 18,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 19,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 20,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 21,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 22,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 23,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 33,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 34,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 35,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 16,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 25,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 24,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 4,
+        "GeosetGroup": 34,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 34,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 34,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 34,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 4,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 34,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 34,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 24,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 34,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 75,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 76,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 75,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 76,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 76,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 75,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 75,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 76,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 34,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 34,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 10,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 34,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 52,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 70,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 9,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 1,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 4,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 8,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 5,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 35,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 22,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 31,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 46,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 46,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 2,
+        "RaceBitSelection": 0
+      }
+    ],
+    "HideGeosetFemale": [
+      {
+        "RaceId": 1,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 4,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 5,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 8,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 9,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 10,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 22,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 23,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 33,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 34,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 35,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 22,
+        "GeosetGroup": 2,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 23,
+        "GeosetGroup": 2,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 4,
+        "GeosetGroup": 3,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 23,
+        "GeosetGroup": 3,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 3,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 3,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 1,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 5,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 23,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 33,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 34,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 16,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 31,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 25,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 24,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 35,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 36,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 16,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 10,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 34,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 4,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 4,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 42,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 24,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 75,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 76,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 75,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 76,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 75,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 76,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 75,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 76,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 16,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 7,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 16,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 35,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 3,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 0,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 3,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 37,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 39,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 10,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 34,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 52,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 70,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 11,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 3,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 85,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 84,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 7,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 9,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 28,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 1,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 32,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 30,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 36,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 37,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 4,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 27,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 2,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 25,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 26,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 24,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 6,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 8,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 5,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 35,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 22,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 31,
+        "GeosetGroup": 51,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 86,
+        "GeosetGroup": 46,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 91,
+        "GeosetGroup": 46,
+        "RaceBitSelection": 0
+      },
+      {
+        "RaceId": 29,
+        "GeosetGroup": 2,
+        "RaceBitSelection": 0
+      }
+    ],
+    "GeosetGroup": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "AttachGeosetGroup": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "GeosetGroupOverride": 0,
+    "ItemVisual": 0,
+    "ParticleColor": null
+  },
+  "Creature": null,
+  "Character": null,
+  "ItemEffects": null,
+  "Equipment": null,
+  "ComponentTextures": null,
+  "ComponentModels": {
+    "0": 17307
+  },
+  "StateKits": null,
+  "Decor": null,
+  "Scale": 1
+}

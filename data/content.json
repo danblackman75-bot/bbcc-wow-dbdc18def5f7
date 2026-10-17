@@ -1,258 +1,258 @@
 {
- "guildNames": [
-  {
-   "n": "Sam Squatch",
-   "w": "Sasquatch, but Sam. Undeniable."
+  "guildNames": [
+    {
+      "n": "Sam Squatch",
+      "w": "Hard to spot. Harder to forget."
+    },
+    {
+      "n": "World of Stun Craft",
+      "w": "One more stun."
+    },
+    {
+      "n": "Slay the Dirty Horde",
+      "w": "For the Alliance."
+    },
+    {
+      "n": "LF Heals",
+      "w": "Someone has to heal."
+    },
+    {
+      "n": "Way Easier Than Hunter",
+      "w": "Famous last words."
+    },
+    {
+      "n": "Demo and the Gang",
+      "w": "Bring the demons."
+    },
+    {
+      "n": "Fate Randomizer",
+      "w": "Let fate pick."
+    },
+    {
+      "n": "Damn Close Poll",
+      "w": "Every vote counts."
+    },
+    {
+      "n": "Out DPS My DH",
+      "w": "Prove it on the meters."
+    },
+    {
+      "n": "Chiller Instinct",
+      "w": "Stay cool. Hit hard."
+    }
+  ],
+  "presets": {
+    "Dungeon core": {
+      "faction": "Alliance",
+      "picks": {
+        "chilly": [
+          "warrior",
+          "Protection",
+          "Dwarf"
+        ],
+        "harry": [
+          "priest",
+          "Holy",
+          "Dwarf"
+        ],
+        "donnie": [
+          "paladin",
+          "Retribution",
+          "Human"
+        ],
+        "bns": [
+          "warlock",
+          "Destruction",
+          "Human"
+        ],
+        "hamfish": [
+          "druid",
+          "Feral",
+          "Night Elf"
+        ]
+      }
+    },
+    "Pally tank": {
+      "faction": "Alliance",
+      "picks": {
+        "chilly": [
+          "paladin",
+          "Protection",
+          "Dwarf"
+        ],
+        "harry": [
+          "warrior",
+          "Fury",
+          "Human"
+        ],
+        "donnie": [
+          "priest",
+          "Holy",
+          "Gnome"
+        ],
+        "bns": [
+          "warlock",
+          "Destruction",
+          "Human"
+        ],
+        "ro": [
+          "mage",
+          "Frost",
+          "Gnome"
+        ]
+      }
+    },
+    "PvP squad": {
+      "faction": "Alliance",
+      "picks": {
+        "harry": [
+          "priest",
+          "Discipline",
+          "Dwarf"
+        ],
+        "donnie": [
+          "paladin",
+          "Holy",
+          "Human"
+        ],
+        "bns": [
+          "warlock",
+          "Demonology",
+          "Human"
+        ],
+        "lmk": [
+          "warlock",
+          "Affliction",
+          "Gnome"
+        ],
+        "hamfish": [
+          "druid",
+          "Feral",
+          "Night Elf"
+        ]
+      }
+    },
+    "Crew leans": {
+      "faction": "Alliance",
+      "picks": {
+        "chilly": [
+          "warrior",
+          "Protection",
+          "Dwarf"
+        ],
+        "harry": [
+          "priest",
+          "Holy",
+          "Dwarf"
+        ],
+        "donnie": [
+          "paladin",
+          "Holy",
+          "Human"
+        ],
+        "bns": [
+          "warlock",
+          "Demonology",
+          "Human"
+        ],
+        "hamfish": [
+          "druid",
+          "Feral",
+          "Night Elf"
+        ]
+      }
+    },
+    "Horde vs Olympus": {
+      "faction": "Horde",
+      "picks": {
+        "chilly": [
+          "warrior",
+          "Arms",
+          "Orc"
+        ],
+        "harry": [
+          "priest",
+          "Discipline",
+          "Undead"
+        ],
+        "bns": [
+          "warlock",
+          "Demonology",
+          "Undead"
+        ],
+        "donnie": [
+          "paladin",
+          "Holy",
+          "Undead"
+        ],
+        "hamfish": [
+          "druid",
+          "Feral",
+          "Tauren"
+        ]
+      }
+    }
   },
-  {
-   "n": "World of Stun Craft",
-   "w": "Chilly's 2022 review of modern PvP"
-  },
-  {
-   "n": "Slay the Dirty Horde",
-   "w": "Donnie's battle cry on the road to the Lich King"
-  },
-  {
-   "n": "LF Heals",
-   "w": "Chilly, 2019. Still looking."
-  },
-  {
-   "n": "Way Easier Than Hunter",
-   "w": "The pitch that sold a Druid"
-  },
-  {
-   "n": "Demo and the Gang",
-   "w": "Harry rounding up the warlocks"
-  },
-  {
-   "n": "Fate Randomizer",
-   "w": "Harry is letting fate pick his alt"
-  },
-  {
-   "n": "Damn Close Poll",
-   "w": "Harry on the faction vote"
-  },
-  {
-   "n": "Out DPS My DH",
-   "w": "Chilly's pally, allegedly"
-  },
-  {
-   "n": "Chiller Instinct",
-   "w": "Menacing. On brand."
-  }
- ],
- "presets": {
-  "Dungeon core": {
-   "faction": "Alliance",
-   "picks": {
-    "chilly": [
-     "warrior",
-     "Protection",
-     "Dwarf"
+  "sources": [
+    [
+      "Blizzard: Carve a New Path with WoW: Forever",
+      "https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever"
     ],
-    "harry": [
-     "priest",
-     "Holy",
-     "Dwarf"
+    [
+      "Blizzard: BlizzCon 2026 round-up",
+      "https://news.blizzard.com/en-us/article/24301145/world-of-warcraft-at-blizzcon-2026-news-round-up"
     ],
-    "donnie": [
-     "paladin",
-     "Holy",
-     "Human"
+    [
+      "Blizzard: Meet the New Skyborne",
+      "https://news.blizzard.com/en-us/article/24302071/wow-forever-meet-the-new-skyborne"
     ],
-    "bns": [
-     "warlock",
-     "Destruction",
-     "Human"
+    [
+      "Blizzard: Choose Your Ruleset",
+      "https://news.blizzard.com/en-us/article/24302070/choose-your-ruleset-in-world-of-warcraft-forever"
     ],
-    "dbx": [
-     "druid",
-     "Feral",
-     "Night Elf"
+    [
+      "Blizzard (Wowhead blue tracker): Create the Hero, races & racials",
+      "https://www.wowhead.com/forever/blue-tracker/news/us/create-the-hero-you-want-to-be-in-world-of-warcraft-forever-world-of-warcraft-24304075"
+    ],
+    [
+      "Wowhead: No More Realms",
+      "https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866"
+    ],
+    [
+      "Half-Baked Warcraft: realmless deep dive",
+      "https://halfbakedwarcraft.com/news/forever-deep-dive-realmless-camping-legacy/"
+    ],
+    [
+      "endgametools: tier list roundup",
+      "https://endgametools.com/en/wow-forever/news/wow-forever-tier-list"
+    ],
+    [
+      "mmonster: tier lists",
+      "https://mmonster.co/wow-forever/guides/tier-lists"
+    ],
+    [
+      "mmonster: rulesets",
+      "https://mmonster.co/wow-forever/guides/pvp/rulesets"
+    ],
+    [
+      "wowforevertierlist: best race per class",
+      "https://wowforevertierlist.com/races/best-race-for-each-class"
+    ],
+    [
+      "wowforevertierlist: race tiers",
+      "https://wowforevertierlist.com/tier-list/races"
+    ],
+    [
+      "wowforevertierlist: PvP tiers",
+      "https://wowforevertierlist.com/tier-list/pvp"
+    ],
+    [
+      "Mobalytics: racial tier list",
+      "https://mobalytics.gg/wow-forever/tier-lists/racials"
+    ],
+    [
+      "timesaver.gg: PvP tier list",
+      "https://timesaver.gg/blog/wow-forever-best-pvp-class-tier-list"
     ]
-   }
-  },
-  "Pally tank": {
-   "faction": "Alliance",
-   "picks": {
-    "chilly": [
-     "paladin",
-     "Protection",
-     "Dwarf"
-    ],
-    "harry": [
-     "warrior",
-     "Fury",
-     "Human"
-    ],
-    "donnie": [
-     "priest",
-     "Holy",
-     "Gnome"
-    ],
-    "bns": [
-     "warlock",
-     "Destruction",
-     "Human"
-    ],
-    "ro": [
-     "mage",
-     "Frost",
-     "Gnome"
-    ]
-   }
-  },
-  "PvP squad": {
-   "faction": "Alliance",
-   "picks": {
-    "harry": [
-     "priest",
-     "Discipline",
-     "Dwarf"
-    ],
-    "donnie": [
-     "paladin",
-     "Holy",
-     "Human"
-    ],
-    "bns": [
-     "warlock",
-     "Demonology",
-     "Human"
-    ],
-    "lmk": [
-     "warlock",
-     "Affliction",
-     "Gnome"
-    ],
-    "dbx": [
-     "druid",
-     "Feral",
-     "Night Elf"
-    ]
-   }
-  },
-  "Crew leans": {
-   "faction": "Alliance",
-   "picks": {
-    "chilly": [
-     "warrior",
-     "Protection",
-     "Dwarf"
-    ],
-    "harry": [
-     "priest",
-     "Holy",
-     "Dwarf"
-    ],
-    "donnie": [
-     "paladin",
-     "Holy",
-     "Human"
-    ],
-    "bns": [
-     "warlock",
-     "Demonology",
-     "Human"
-    ],
-    "dbx": [
-     "druid",
-     "Feral",
-     "Night Elf"
-    ]
-   }
-  },
-  "Horde vs Olympus": {
-   "faction": "Horde",
-   "picks": {
-    "chilly": [
-     "warrior",
-     "Arms",
-     "Orc"
-    ],
-    "harry": [
-     "priest",
-     "Discipline",
-     "Undead"
-    ],
-    "bns": [
-     "warlock",
-     "Demonology",
-     "Undead"
-    ],
-    "donnie": [
-     "paladin",
-     "Holy",
-     "Undead"
-    ],
-    "dbx": [
-     "druid",
-     "Feral",
-     "Tauren"
-    ]
-   }
-  }
- },
- "sources": [
-  [
-   "Blizzard: Carve a New Path with WoW: Forever",
-   "https://news.blizzard.com/en-us/article/24302093/carve-a-new-path-with-world-of-warcraft-forever"
-  ],
-  [
-   "Blizzard: BlizzCon 2026 round-up",
-   "https://news.blizzard.com/en-us/article/24301145/world-of-warcraft-at-blizzcon-2026-news-round-up"
-  ],
-  [
-   "Blizzard: Meet the New Skyborne",
-   "https://news.blizzard.com/en-us/article/24302071/wow-forever-meet-the-new-skyborne"
-  ],
-  [
-   "Blizzard: Choose Your Ruleset",
-   "https://news.blizzard.com/en-us/article/24302070/choose-your-ruleset-in-world-of-warcraft-forever"
-  ],
-  [
-   "Blizzard (Wowhead blue tracker): Create the Hero, races & racials",
-   "https://www.wowhead.com/forever/blue-tracker/news/us/create-the-hero-you-want-to-be-in-world-of-warcraft-forever-world-of-warcraft-24304075"
-  ],
-  [
-   "Wowhead: No More Realms",
-   "https://www.wowhead.com/forever/news/no-more-realms-in-wow-forever-382866"
-  ],
-  [
-   "Half-Baked Warcraft: realmless deep dive",
-   "https://halfbakedwarcraft.com/news/forever-deep-dive-realmless-camping-legacy/"
-  ],
-  [
-   "endgametools: tier list roundup",
-   "https://endgametools.com/en/wow-forever/news/wow-forever-tier-list"
-  ],
-  [
-   "mmonster: tier lists",
-   "https://mmonster.co/wow-forever/guides/tier-lists"
-  ],
-  [
-   "mmonster: rulesets",
-   "https://mmonster.co/wow-forever/guides/pvp/rulesets"
-  ],
-  [
-   "wowforevertierlist: best race per class",
-   "https://wowforevertierlist.com/races/best-race-for-each-class"
-  ],
-  [
-   "wowforevertierlist: race tiers",
-   "https://wowforevertierlist.com/tier-list/races"
-  ],
-  [
-   "wowforevertierlist: PvP tiers",
-   "https://wowforevertierlist.com/tier-list/pvp"
-  ],
-  [
-   "Mobalytics: racial tier list",
-   "https://mobalytics.gg/wow-forever/tier-lists/racials"
-  ],
-  [
-   "timesaver.gg: PvP tier list",
-   "https://timesaver.gg/blog/wow-forever-best-pvp-class-tier-list"
   ]
- ]
 }
