@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T17:07:03.159Z",
+ "updated": "2026-10-17T03:07:02.457Z",
  "updatedNote": "Auto-refreshed by scripts/refresh-live.mjs",
  "news": [
   {
@@ -312,6 +312,42 @@
  ],
  "autoNews": [
   {
+   "d": "2026-10-17",
+   "t": "Wowhead's Talebound Talent Calculator Now Live",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383475/wowheads-talebound-talent-calculator-now-live"
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Blizzard Moves WoW: Forever Stress Test to October 21",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383474/blizzard-moves-wow-forever-stress-test-to-october-21"
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Blizzard Clarifies Recent Art Assets Discovered on the WoW: Forever Beta",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383472/blizzard-clarifies-recent-art-assets-discovered-on-the-wow-forever-beta"
+  },
+  {
+   "d": "2026-10-16",
+   "t": "The $100K WoW Tournament Is Pure Chaos! The PULL 10 Podcast Featuring Tips Out",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383470/the-100k-wow-tournament-is-pure-chaos-the-pull-10-podcast-featuring-tips-out"
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Potential New Mounts, Pets, and Cosmetics Discovered in Latest WoW: Forever Build",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383463/potential-new-mounts-pets-and-cosmetics-discovered-in-latest-wow-forever-build"
+  },
+  {
+   "d": "2026-10-16",
+   "t": "Blizzard Announces Hotfix for Druid Cat Form Quest in WoW: Forever",
+   "src": "Wowhead",
+   "url": "https://www.wowhead.com/news=383466/blizzard-announces-hotfix-for-druid-cat-form-quest-in-wow-forever"
+  },
+  {
    "d": "2026-10-16",
    "t": "Midnight 12.1.5 Live, Patch 12.1.7 & WoW: Forever - WoW Weekly Recap",
    "src": "Wowhead",
@@ -364,42 +400,6 @@
    "t": "No Lower Level PvP Protection Planned for WoW: Forever",
    "src": "Wowhead",
    "url": "https://www.wowhead.com/news=383435/no-lower-level-pvp-protection-planned-for-wow-forever"
-  },
-  {
-   "d": "2026-10-15",
-   "t": "Join the World of Warcraft: Forever Stress Test on October 19th",
-   "src": "Wowhead",
-   "url": "https://www.wowhead.com/news=383449/join-the-world-of-warcraft-forever-stress-test-on-october-19th"
-  },
-  {
-   "d": "2026-10-15",
-   "t": "WoW: Forever Beta Going Down for Maintenance for New Build",
-   "src": "Wowhead",
-   "url": "https://www.wowhead.com/news=383446/wow-forever-beta-going-down-for-maintenance-for-new-build"
-  },
-  {
-   "d": "2026-10-15",
-   "t": "Paladin Class Deep Dive in WoW: Forever",
-   "src": "Wowhead",
-   "url": "https://www.wowhead.com/news=383440/paladin-class-deep-dive-in-wow-forever"
-  },
-  {
-   "d": "2026-10-15",
-   "t": "Blizzard to Lower Alterac Valley Honor and Increase All Other Battlegrounds Honor in WoW: Forever",
-   "src": "Wowhead",
-   "url": "https://www.wowhead.com/news=383433/blizzard-to-lower-alterac-valley-honor-and-increase-all-other-battlegrounds"
-  },
-  {
-   "d": "2026-10-15",
-   "t": "Blizzard Confirms No Current Plans for RP-PVP Ruleset in WoW: Forever",
-   "src": "Wowhead",
-   "url": "https://www.wowhead.com/news=383431/blizzard-confirms-no-current-plans-for-rp-pvp-ruleset-in-wow-forever"
-  },
-  {
-   "d": "2026-10-15",
-   "t": "The WoW: Forever Podcast Episode 4 Now Available - PvP Discussion",
-   "src": "Wowhead",
-   "url": "https://www.wowhead.com/news=383429/the-wow-forever-podcast-episode-3-now-available-pvp-discussion"
   }
  ]
 }
